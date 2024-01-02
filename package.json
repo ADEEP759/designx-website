@@ -1,5 +1,6 @@
 {
   "name": "designx-website",
+  "homepage": "https://react.dfos.co/DesignX_web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
