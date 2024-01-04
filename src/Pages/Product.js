@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import HeaderDemo from '../Components/Common/HeaderDemo'
 import ProductHero from '../Components/Product/ProductHero'
 import ProductContent from '../Components/Product/ProductContent'
@@ -13,6 +13,9 @@ import Footer from '../Components/Common/Footer'
 // import CardDemo from '../Components/Product/CardDemo'
 
 const Product = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className='product'>
       <HeaderDemo/>

@@ -1,6 +1,6 @@
 import React from 'react'
 // import headerblogDetails from '../Assets/Images/headerBlogdetails.svg';
-import headerBlockPic from '../Assets/Images/blogDetailspic.svg'
+import headerBlockPic from '../Assets/Images/blogDetailspic-min.png'
 const HeaderBlogDetails = () => {
   return (
     <div className='blogHeaderBack'>

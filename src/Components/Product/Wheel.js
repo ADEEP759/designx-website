@@ -12,7 +12,7 @@ const Wheel = () => {
 
   return (
     <div className="bg-[#01071B]">
-      <div className="flex flex-col lg:grid grid-cols-2 gap-4 px-[40px] lg:px-[0]">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-4 px-[15px] sm:px-[40px] lg:px-[0]">
         <div>
           <svg
             width="100%"
@@ -592,7 +592,7 @@ const Wheel = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex flex-col justify-center items-center w-full px-[30px] lg:px-[80px] py-[20px]">
+        <div className="flex flex-col justify-center items-center w-full px-[15px] sm:px-[30px] lg:px-[80px] py-[20px]">
           {/* <p className="text-[34px] text-white font-poppins font-medium">Unveil unlimited advantages</p> */}
           <div className="w-full md:h-[200px] lg:h-[440px] xl:h-[360px] 2xl:h-[300px] border-[7px] border-solid border-[#0B77F8] rounded-[21px] px-[28px] py-[10px]">
             <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold">

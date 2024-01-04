@@ -34,3 +34,17 @@
   border-radius: 17px;
   transition: border 0.3s ease;
 }
+
+.tiltSpring{
+  transform: skew(0deg, 351deg);
+  position: absolute;
+  top: -40px;
+  right: 0;
+}
+
+@media screen and (max-width: 639px) {
+  .tiltSpring{
+    transform: skew(0deg, 341deg);
+    top: 10px;
+  }
+}

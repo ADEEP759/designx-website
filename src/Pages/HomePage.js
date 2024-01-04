@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import Header from '../Components/Common/Header'
 import HeroSection from '../Components/HomePage/HeroSection'
 import ContentOne from '../Components/HomePage/ContentOne'
@@ -11,8 +11,9 @@ import HeaderDemo from '../Components/Common/HeaderDemo'
 // import TestimoniesClient from '../Components/HomePage/TestimoniesClient'
 
 const HomePage = () => {
-
-  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       {/* <Header/> */}

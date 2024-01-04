@@ -45,3 +45,9 @@
   .checkImage{
     transform: skewy(5deg); 
   }
+
+  .mobileFactory{
+    transform: skewy(5deg); 
+    padding-top: 30px;
+    padding-left: 15px;
+  }

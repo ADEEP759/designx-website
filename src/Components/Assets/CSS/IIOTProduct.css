@@ -7,3 +7,12 @@
   .IIOTContent{
     transform: skewy(5deg);
   }
+
+  .iiotDetails{
+    transform: skewy(5deg);
+  }
+
+  .computerVisionMobile{
+    transform: skewy(5deg);
+    margin-top: 20px;
+  }

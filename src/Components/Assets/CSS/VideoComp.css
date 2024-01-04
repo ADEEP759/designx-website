@@ -24,6 +24,15 @@
   );
 } */
 
+.text-gradientVidHead{
+  transform: skewy(5deg);
+  background: linear-gradient(180deg, #0043ff -7.64%, #009fff 36.11%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 .videoContent {
   transform: skewy(5deg);
 }

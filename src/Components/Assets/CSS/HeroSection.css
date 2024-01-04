@@ -12,7 +12,14 @@
 }
 
 .heroBackGround{
-  background-image: url("../Images/heroimage.png");
+  background-image: url("../Images/heroimage-min.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 639px) {
+.heroBackGround{
+  background-color: #001141;
+  background-image: none;
+}
 }

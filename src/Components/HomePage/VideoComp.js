@@ -19,28 +19,31 @@ const VideoComp = () => {
 
   return (
     <div className="videoContainer">
-      <div className="videoComp bg-[#282932] h-[700px] lg:h-[600px]">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 pt-[50px] lg:pt-[100px] px-[30px] lg:px-[80px] videoContent">
-          <div className="px-[10px] lg:px-[78px] mt-[0%] lg:mt-[10%]">
-            <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins capitalize">
+      <div className="videoComp bg-[#282932] pb-[80px] h-auto md:h-[700px] lg:h-[600px]">
+      <p className="text-gradientVidHead block lg:hidden text-[16px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
               Harness the power of DFOS
             </p>
-            <p className="text-white text-[14px] md:text-[18px]">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] px-[30px] lg:px-[80px] videoContent">
+          <div className="px-[10px] mt-[0%] lg:mt-[10%]">
+            <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins capitalize hidden lg:block">
+              Harness the power of DFOS
+            </p>
+            <p className="text-white text-[12px] sm:text-[14px] md:text-[18px]">
               Take your manufacturing plant to new heights by getting the utmost
               shop floor visibility, connectivity & real-time insights.
             </p>
-            <div className="block md:flex lg:block xl:flex">
+            <div className="flex items-center">
               <Link to="/Contact">
-                <button className="demo text-white text-[14px] md:text-[24px] rounded-[5px] font-medium px-[23px] py-[5px] h-[58px]">
+                <button className="demo text-white text-[12px] sm:text-[14px] md:text-[18px] 2xl:text-[24px] rounded-[5px] font-medium px-[5px] sm:px-[23px] py-[0px] sm:py-[5px] h-[41px] lg:h-[58px]">
                   Get a Demo
                 </button>
               </Link>
               <button
-              className="flex mt-[10px] md:mt-[0px] lg:mt-[10px] xl:mt-[0px] ml-[0px] xl:ml-[59px]"
+              className="flex justify-center items-center ml-[10px] xl:ml-[59px] h-[41px] lg:h-[58px]"
               onClick={playVideo}
             >
-              <img src={play} alt="Play Icon" />
-              <p className="text-white text-[20px] md:text-[25px] font-poppins font-semibold ml-[21px] py-[13px]">
+              <img src={play} alt="Play Icon" className="w-[30px] h-[30px] sm:w-[50px] sm:h-[50px]" />
+              <p className="text-white text-[12px] sm:text-[14px] ml-[5px] md:text-[18px] 2xl:text-[24px] font-poppins font-semibold py-[16px] sm:py-[13px] relative top-2">
                 View Video
               </p>
             </button>
@@ -62,7 +65,7 @@ const VideoComp = () => {
                     <img
                       src={videoView}
                       alt="View Video"
-                      className="absolute bottom-[40%] left-[45%]"
+                      className="absolute bottom-[40%] left-[45%] w-[40px] h-[40px] lg:w-[50px] lg:h-[50px]"
                     />
                   </div>
                 </div>
