@@ -8,29 +8,29 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 const SubmitForm = () => {
   return (
     <div className="pt-[85px] md:pt-[150px]">
-      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] lg:mx-[80px]">
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] xl:mx-[150px] 2xl:mx-[250px]">
         <div className="w-full lg:w-[390px]">
           <p className="text-white text-[16px] sm:text-[20px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
             One-step closer to digitalization
           </p>
-          <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins text-justify mr-[30px]">
+          <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins">
             The quest to find an agile solution for your shop floor has come to
             an end. Switch to digitalization today with DesignX!
           </p>
-          <div className="flex  justify-center flex-row mt-[40px]">
-            <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF]">
-              <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px] mr-[20px]">
+          <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
+            <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+              <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Book a Demo
               </p>
-              <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px] mr-[30px]">
+              <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
                 Request a demo of one of our solutions.
               </p>
             </div>
-            <div className="bookDemo ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF]">
-              <p className="text-white  text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px] mr-[20px]">
+            <div className="bookDemo ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+              <p className="text-white  text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Try Now !
               </p>
-              <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px] mr-[30px]">
+              <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
                 Sign up for a demo and switch to digitalization.
               </p>
             </div>

@@ -32,7 +32,7 @@ const HeaderDemo = () => {
     <div
       className={`sticky-header ${
         isSticky ? "fixed" : ""
-      } border-b-[0.5px] border-solid border-[#adadad] font-poppins font-normal h-[76px]`}
+      } border-b-[0.5px] border-solid border-[#adadad] font-poppins font-normal h-[60px] lg:h-[76px]`}
     >
       <header className="absolute inset-x-0 top-0 z-50 h-[70px]">
         <nav
@@ -139,7 +139,7 @@ const HeaderDemo = () => {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00153F] px-6 py-20 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[#00153F] px-6 pt-4 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <img className="h-8 w-auto" src={logo} alt="" />
@@ -213,7 +213,7 @@ const HeaderDemo = () => {
                   data-tooltip-id="my-tooltip"
                   data-tooltip-content="Coming Soon"
                     to="#"
-                    className="-mx-3 block rounded-[64px] font-inter px-3 py-2.5 text-[14px] sm:text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
+                    className="-mx-3 block rounded-[64px] font-inter ml-[3px] px-3 py-2.5 text-[14px] sm:text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
                   >
                     Demo
                   </button>

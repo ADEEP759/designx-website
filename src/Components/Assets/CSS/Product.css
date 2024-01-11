@@ -2,8 +2,10 @@
     background: linear-gradient(180deg, #00081E 0%, #00000C 100%);
 } */
 .product{
-  /* background: linear-gradient(#00000D 100%, #000F3F 100%, #037EC4 100%); */
-  background-color: #03091b;
+  background: linear-gradient(#00000D 100%, #000F3F 100%, #037EC4 100%);
+  /* background-image: url("../Images/aboutUsBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 
 video {

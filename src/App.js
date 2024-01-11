@@ -7,6 +7,8 @@ import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Blogs from './Pages/Blogs';
 import BlogDetails from './Pages/BlogDetails';
+import IBPMS from './Components/Blogs Detail/IBPMS';
+import ArtificalIntelligence from './Components/Blogs Detail/ArtificalIntelligence';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
       <Route path='/Contact' element={<Contact/>}/>
       <Route path='/Blogs' element={<Blogs/>}/>
       <Route path='/BlogDetails' element={<BlogDetails/>}/>
+      <Route path='/iBPMS' element={<IBPMS/>}/>
+      <Route path='/ArtificialIntelligence' element={<ArtificalIntelligence/>}/>
 
     </Routes>
   </BrowserRouter>

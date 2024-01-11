@@ -22,32 +22,3 @@
     background: linear-gradient(90deg, #0945CB -6.95%, #1F84EC 102.37%);
 }
 
-@media screen and (min-width:1580px){
-.blogContent{
-    margin-top: 350px;
-}
-}
-
-@media screen and (min-width:1800px){
-.blogContent{
-    margin-top: 400px;
-}
-}
-
-@media screen and (min-width:2040px){
-.blogContent{
-    margin-top: 450px;
-}
-}
-
-@media screen and (min-width:2250px){
-.blogContent{
-    margin-top: 500px;
-}
-}
-
-@media screen and (min-width:2500px){
-.blogContent{
-    margin-top: 600px;
-}
-}

@@ -12,11 +12,11 @@ const Wheel = () => {
 
   return (
     <div className="bg-[#01071B]">
-      <div className="flex flex-col lg:grid grid-cols-2 gap-4 px-[15px] sm:px-[40px] lg:px-[0]">
+      <div className="flex flex-col lg:grid grid-cols-2 gap-4">
         <div>
           <svg
-            width="100%"
-            height="99%"
+            width="95%"
+            height="95%"
             viewBox="0 0 716 726"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,8 @@ const Wheel = () => {
                 handleHeadingHover({
                   name: "Enhanced Quality Control",
                   description:
-                    "By integrating quality control measures and real-time monitoring, DFOS helps in maintaining & improving product quality, reducing defects & minimizing the likelihood of producing substandard goods.",
+                    "Monitor real-time data & integrate quality control measures with DFOS. It helps to maintain & improve product’s quality, reduce defects & minimize the likelihood to produce substandard goods.",
+                    bonus: "Get better data visibility, save time & enhance the overall quality of goods.",
                 })
               }
             />
@@ -65,7 +66,8 @@ const Wheel = () => {
                 handleHeadingHover({
                   name: "Improved Efficiency",
                   description:
-                    "DFOS optimizes production processes, reduces downtime, and minimizes manual interventions. This leads to increased production efficiency, shorter lead times, and higher throughput.",
+                    "DFOS optimizes production processes, reduces downtime, and minimizes manual interventions. This leads to increased production efficiency, shorter lead times, and higher throughput. ",
+                    bonus: "Streamline processes & uncover higher efficiency to uplift agility & innovation.",
                 })
               }
             />
@@ -84,6 +86,7 @@ const Wheel = () => {
                   name: "Sustainability",
                   description:
                     "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues.",
+                    bonus: "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS.",
                 })
               }
             />
@@ -101,6 +104,7 @@ const Wheel = () => {
                   name: "Data-Driven Decision ",
                   description:
                     "DFOS collects & analyzes volumes of data from various sources, providing valuable insights for decision-makers. This data-driven approach allows for better planning, resource allocation, and process optimization.",
+                    bonus: "Capture real-time insights & make your decisions data backed.",
                 })
               }
             />
@@ -114,6 +118,7 @@ const Wheel = () => {
                   name: "Cost Reduction ",
                   description:
                     "Through predictive maintenance, energy management, and waste reduction, DFOS helps in lowering operational costs. It can also optimize inventory management, reducing carrying costs & the risk of overstock or stockouts. ",
+                    bonus: "Eliminate delays, bottlenecks & unnecessary steps to overall reduce cost.",
                 })
               }
 
@@ -592,16 +597,21 @@ const Wheel = () => {
             </defs>
           </svg>
         </div>
-        <div className="flex flex-col justify-center items-center w-full px-[15px] sm:px-[30px] lg:px-[80px] py-[20px]">
+        <div className="flex flex-col justify-center items-center w-full px-[15px] sm:pr-[30px] lg:pr-[80px] py-[20px] tracking-wide">
           {/* <p className="text-[34px] text-white font-poppins font-medium">Unveil unlimited advantages</p> */}
-          <div className="w-full md:h-[200px] lg:h-[440px] xl:h-[360px] 2xl:h-[300px] border-[7px] border-solid border-[#0B77F8] rounded-[21px] px-[28px] py-[10px]">
-            <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold">
+          <div className="w-full h-auto border-[7px] border-solid border-[#0B77F8] rounded-[21px] pt-[20px] pb-[26px] px-[30px] text-left">
+            <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold tracking-wide">
             {hoveredHeading ? hoveredHeading.name : "Sustainability"}
             </p>
-            <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins">
+            <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins tracking-wide">
             {hoveredHeading
                 ? hoveredHeading.description
                 : "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues."}
+            </p>
+            <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins tracking-wide">
+            {hoveredHeading
+                ? hoveredHeading.bonus
+                : "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS."}
             </p>
           </div>
         </div>

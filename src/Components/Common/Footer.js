@@ -48,8 +48,8 @@ const Footer = () => {
             <br/>
             <br/>
             <p className="flex">
-             <Link to='https://www.facebook.com/designx.in'> <img src={facebook} alt="" className="mr-[5px]"  /> </Link>
-              <Link to='https://www.linkedin.com/company/nrv-designx/'><img src={linkedin} alt="" className="ml-[5px]"/> </Link>
+             <Link to='https://www.facebook.com/designx.in' target='_blank'> <img src={facebook} alt="" className="mr-[16px]"  /> </Link>
+              <Link to='https://www.linkedin.com/company/nrv-designx/' target='_blank'><img src={linkedin} alt="" className="ml-[16px]"/> </Link>
             </p>
           </div>
         </div>

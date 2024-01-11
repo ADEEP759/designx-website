@@ -27,7 +27,7 @@ const Founders = () => {
           <p className="text-[38px] lg:text-[46px] hidden lg:block text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
-          <div className="bg-[#282932] w-[100%] sm:w-[90%] lg:w-[100%] lg:h-[300px] rounded-[17px] pt-[13px] pr-[20px] mt-[20px] sm:mt-[60px] lg:mt-[70px] founderDetails">
+          <div className="bg-[#282932] w-[100%] sm:w-[90%] lg:w-[100%] lg:h-[300px] rounded-[17px] pt-[13px] pr-[20px] mt-[20px] sm:mt-[60px] lg:mt-[70px] founderDetails tracking-wide leading-[20px] lg:leading-[36px]">
             <img src={invertedComma1} alt="" className="ml-[23px]" />
             <p className="text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[51px]">
               {hoveredFounder ? hoveredFounder.name : "Rajat Srivastav, CEO"}
@@ -46,7 +46,7 @@ const Founders = () => {
         </div>
         <div className="block sm:flex mt-[50px] lg:mt-[0px]">
           <div
-            className="bg-[#282932] w-[313px] h-[506px] rounded-[17px] pt-[65px] cardFounder pl-[20px] hidden sm:block"
+            className="bg-[#282932] w-[313px] h-[506px] rounded-[17px] pt-[65px] cardFounder pl-[20px] hidden sm:block tracking-wide leading-[20px] lg:leading-[36px]"
             onMouseEnter={() =>
               handleFounderHover({
                 name: "Rajat Srivastav, CEO",
@@ -65,14 +65,14 @@ const Founders = () => {
             <div className="flex justify-around mt-[20px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/">
+              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/" target='_blank'>
                 {" "}
                 <img src={linkedin} alt="" />{" "}
               </Link>
             </div>
           </div>
           <div
-            className="bg-[#282932] w-[313px] h-[506px] rounded-[17px] pt-[65px] cardFounder ml-[28px] pl-[20px] hidden sm:block"
+            className="bg-[#282932] w-[313px] h-[506px] rounded-[17px] pt-[65px] cardFounder ml-[28px] pl-[20px] hidden sm:block tracking-wide leading-[20px] lg:leading-[36px]"
             onMouseEnter={() =>
               handleFounderHover({
                 name: "Nishant Srivastav, CTO",
@@ -91,13 +91,13 @@ const Founders = () => {
             <div className="flex justify-around items-center mt-[20px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/">
+              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/" target='_blank'>
                 <img src={linkedin} alt="" />
               </Link>
             </div>
           </div>
           <div
-            className="bg-[#282932] w-[100%] h-[250px] rounded-[17px] pt-[65px] cardFounder pl-[20px] sm:hidden flex"
+            className="bg-[#282932] w-[100%] h-[250px] rounded-[17px] pt-[65px] cardFounder pl-[20px] sm:hidden flex tracking-wide leading-[20px] lg:leading-[36px]"
             onMouseEnter={() =>
               handleFounderHover({
                 name: "Rajat Srivastav, CEO",
@@ -117,7 +117,7 @@ const Founders = () => {
             <div className="flex justify-around mt-[20px] px-[15px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/">
+              <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/" target='_blank'>
                 {" "}
                 <img src={linkedin} alt="" />{" "}
               </Link>
@@ -125,7 +125,7 @@ const Founders = () => {
             </div>
           </div>
           <div
-            className="bg-[#282932] w-[100%] h-[250px] rounded-[17px] pt-[65px] cardFounder pl-[20px] mt-[20px] sm:hidden flex"
+            className="bg-[#282932] w-[100%] h-[250px] rounded-[17px] pt-[65px] cardFounder pl-[20px] mt-[20px] sm:hidden flex tracking-wide leading-[20px] lg:leading-[36px]"
             onMouseEnter={() =>
               handleFounderHover({
                 name: "Nishant Srivastav, CTO",
@@ -145,7 +145,7 @@ const Founders = () => {
             <div className="flex justify-around mt-[20px] px-[15px]">
               <img src={twitter} alt="" />
               <img src={facebook} alt="" />
-              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/">
+              <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/" target='_blank'>
                 <img src={linkedin} alt="" />
               </Link>
             </div>

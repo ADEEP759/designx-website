@@ -5,10 +5,10 @@ const Vision = () => {
     <div className="vision py-[27px] px-[40px] lg:px-[80px] w-full h-auto lg:h-[214px]">
       <div className="flex flex-col sm:flex-row justify-center items-center">
         <div className="w-full sm:w-[45%]">
-          <p className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
+          <p className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium tracking-wide leading-[20px] lg:leading-[36px]">
             Our Vision
           </p>
-          <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins">
+          <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins tracking-wide leading-[20px] lg:leading-[36px]">
             To accelerate transition of manufacturing industry towards digital
             transformation through DFOS
           </p>
@@ -17,10 +17,10 @@ const Vision = () => {
           <img src={split} alt="" />
         </div>
         <div className="w-full sm:w-[45%]">
-          <p className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
+          <p className="text-[16px] sm:text-[24px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium tracking-wide leading-[20px] lg:leading-[36px]">
             Our Mission
           </p>
-          <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins">
+          <p className="text-[12px] md:text-[14px] lg:text-[18px] text-[#adadad] font-poppins tracking-wide leading-[20px] lg:leading-[36px]">
             To pre-create the manufacturing future with self-serving tech
           </p>
         </div>
