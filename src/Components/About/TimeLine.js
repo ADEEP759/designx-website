@@ -5,6 +5,7 @@ import "../Assets/CSS/Timeline.css";
 import TimelinePhoto from "../Assets/Images/timelineBack.png";
 
 const TimeLine = () => {
+  const [focusedIndex, setFocusedIndex] = React.useState(0);
   const TimeLineData = [
     {
       id:0,
@@ -54,6 +55,16 @@ const TimeLine = () => {
     opacity: 0.5,
   });
 
+  const handleScroll = (offset) => {
+    // Calculate the index based on the scroll offset
+    const calculatedIndex = Math.round(offset);
+    
+    // Set the focused index, but ensure it is within the valid range
+    setFocusedIndex(Math.max(0, Math.min(calculatedIndex, TimeLineData.length - 1)));
+  };
+
+
+  console.log(focusedIndex)
   return (
     <div className="TimeLine border-b-[1px] border-b-solid border-b-black h-[600px]">
       <div className="background">
@@ -68,6 +79,7 @@ const TimeLine = () => {
         <Parallax
           pages={TimeLineData.length}
           config={{ mass: 1, tension: 280, friction: 24 }}
+          onScroll={(offset) => handleScroll(offset)}
         >
           {TimeLineData.map((item, index) => {
 
@@ -76,11 +88,13 @@ const TimeLine = () => {
               sticky={{ start: index, end: index + 1 }}
               style={{
                 ...parallaxSpring,
-                opacity: index === 0 ? 1 : 0.5, // Set opacity based on focus
+                opacity: index === focusedIndex ? 1 : 0.5, // Set opacity based on focus
               }}
+             
             >
-              <div className="grid grid-cols-2 gap-4">
-                <div className="card sticky">
+              <div className="grid grid-cols-2 gap-4"  tabIndex={0} // Make the div focusable
+                onFocus={() => setFocusedIndex(index)} >
+                <div className="card sticky"       >
                   <p>{item.year}</p>
                 </div>
                 <div className="text-white font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
