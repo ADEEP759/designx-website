@@ -11,6 +11,7 @@ import Wheel from '../Components/Product/Wheel'
 import Approach from '../Components/Product/Approach'
 import Footer from '../Components/Common/Footer'
 // import CardDemo from '../Components/Product/CardDemo'
+// import productBack from '../Components/Assets/Images/aboutUsBackground.png';
 
 const Product = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Product = () => {
   }, []);
   return (
     <div className='product'>
+      {/* <img src={productBack} alt="" className='w-full' /> */}
       <HeaderDemo/>
       <ProductHero/>
       <ProductContent/>

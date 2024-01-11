@@ -3,7 +3,7 @@ import ArtificialIntelligence from "../Assets/Images/ArtificialDetailed.png";
 const ArtificalIntelligence = () => {
   return (
     <div className="blogback">
-      <div className="blogHeaderBack">
+      <div className="blogHeaderBack pt-[75px]">
         {/* <img src={headerblogDetails} alt="" className='absolute top-0 w-full' /> */}
         <div className="block lg:grid lg:grid-cols-2 gap-4 relative z-[1]">
           <div className="pl-[50px] lg:pl-[100px] pr-[50px]">
@@ -39,7 +39,7 @@ const ArtificalIntelligence = () => {
           intelligence.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins font-medium">
           What is Artificial Intelligence?
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins">
@@ -60,7 +60,7 @@ const ArtificalIntelligence = () => {
           Let’s peep into the answer.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins font-medium">
           How Does Artificial Intelligence Work?
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins">
@@ -90,28 +90,28 @@ const ArtificalIntelligence = () => {
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins">
           Now let us look at the benefits of AI for the manufacturing industry.
         </p>
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px]">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-medium">
           Benefits of AI for manufacturing industry
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           Today AI has multiple benefits for the manufacturing industry. From
           solving complex problems to automating ordinary tasks, it can turn the
           tables for the shop floors. Some of the benefits are as follows:
         </p>
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           Accelerate Operations
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           Reaching maximum shop floor efficiency by using the right technology
           is no longer an easy task. Thus, you need to accelerate your shop
           floor operations with the assistance of AI to achieve overall
           efficiency.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           Transparent process
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           Shop floors can now use advanced technology and increase process
           visibility with the help of AI. The staff members can collect accurate
           data from machines, which makes the process more transparent.
@@ -119,10 +119,10 @@ const ArtificalIntelligence = () => {
           with the right data.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           Better Inventory Management
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           By automating inventory management and transportation processes, you
           can reduce wastage errors and improve monitoring. Storage and shipping
           costs can be optimized with the help of AI solutions. Additionally,
@@ -130,10 +130,10 @@ const ArtificalIntelligence = () => {
           market supply can be quickly responded to with AI tools.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           Seamless Data Access
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           Another benefit of AI that can enhance the productivity of your shop
           floor is its access to endless data sources. Data can be a game
           changer, as with its assistance, you can make data-backed decisions,
@@ -141,14 +141,14 @@ const ArtificalIntelligence = () => {
           demand to improving product quality, data can help you generate
           valuable insights for the success of your organization.
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           So now you know where artificial intelligence is used and its benefits
           for the manufacturing industry. So, you should switch to AI solutions.
         </p>
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins font-medium">
           Leverage AI Solutions with DFOS
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins ">
           DFOS can help you embrace the benefits of AI and many other deep tech
           solutions on a single platform. It provides you with real-time
           analytics, reports & live dashboards with which you can automate your

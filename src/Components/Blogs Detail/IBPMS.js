@@ -4,7 +4,7 @@ import iBPMS from "../Assets/Images/iBPMSDetails.png";
 const IBPMS = () => {
   return (
     <div className="blogback">
-      <div className="blogHeaderBack">
+      <div className="blogHeaderBack pt-[75px]">
         {/* <img src={headerblogDetails} alt="" className='absolute top-0 w-full' /> */}
         <div className="block lg:grid lg:grid-cols-2 gap-4 relative z-[1]">
           <div className="pl-[50px] lg:pl-[100px] pr-[50px]">
@@ -45,7 +45,7 @@ const IBPMS = () => {
           into the meaning of iBMP.{" "}
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins font-medium">
           What is intelligent business process management suite?
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins">
@@ -89,7 +89,7 @@ const IBPMS = () => {
           thinking how DesignX’s platform- DFOS can help you with iBPMS? Let us
           find out.
         </p>
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins font-medium">
           How DFOS empowers shop floors with iBPMS?
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins">
@@ -113,7 +113,7 @@ const IBPMS = () => {
           relevant to your business.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px]">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-medium">
           Why is DFOS the best choice for manufacturing units?
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
@@ -130,7 +130,7 @@ const IBPMS = () => {
           DFOS:
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           More Efficiency
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
@@ -142,7 +142,7 @@ const IBPMS = () => {
           platform to address specific needs by delivering topnotch solutions.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           Scope for Scalability
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
@@ -153,7 +153,7 @@ const IBPMS = () => {
           can give you automation & smart manufacturing solutions in one go!
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[16px] md:text-[20px] lg:text-[24px] mt-[40px] font-poppins font-medium">
           DIY platform- Best in Industry
         </p>
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
@@ -163,16 +163,16 @@ const IBPMS = () => {
           additional expenses and you can easily transform your shop floor
           smartly.
         </p>
-        <p className="text-[#C8C8C8] text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
           With our platform, you can reap the benefits of Industry 4.0 and be
           one step closer to becoming a completely automated shop floor. So go
           digital with DFOS!.
         </p>
 
-        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins">
+        <p className="text-[#FCFCFC] text-[20px] md:text-[24px] lg:text-[28px] mt-[40px] font-poppins font-medium">
           The Bottom Line
         </p>
-        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify">
+        <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins text-justify font-medium">
           Switching to smart manufacturing is no longer a choice, if you want to
           stay ahead of your competitors. In the era of digitalization &
           automation, intelligent business process management suite is a crucial

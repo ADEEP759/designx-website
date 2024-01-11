@@ -25,7 +25,7 @@ const ProductDigitalTwin = () => {
             So, you can visit your manufacturing plant anytime with our digital
             twin.
           </p>
-          <Link to="/BlogDetails" className="no-underline">
+          <Link to="/DigitalTwin" className="no-underline">
             <button className="blogReadButton flex text-[12px] sm:text-[14px] lg:text-[18px] items-center justify-around w-[120px] sm:w-[151px] h-[40px] rounded-[7px] font-inter font-normal text-white tracking-wide">
               Read More <img src={readMoreArrow} alt="" />
             </button>

@@ -7,8 +7,9 @@ import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Blogs from './Pages/Blogs';
 import BlogDetails from './Pages/BlogDetails';
-import IBPMS from './Components/Blogs Detail/IBPMS';
-import ArtificalIntelligence from './Components/Blogs Detail/ArtificalIntelligence';
+import IBPMSMain from './Pages/IBPMSMain';
+import ArtificialIntelligenceMain from './Pages/ArtificialIntelligenceMain';
+import DigitalTwinMain from './Pages/DigitalTwinMain';
 
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
       <Route path='/Contact' element={<Contact/>}/>
       <Route path='/Blogs' element={<Blogs/>}/>
       <Route path='/BlogDetails' element={<BlogDetails/>}/>
-      <Route path='/iBPMS' element={<IBPMS/>}/>
-      <Route path='/ArtificialIntelligence' element={<ArtificalIntelligence/>}/>
+      <Route path='/iBPMS' element={<IBPMSMain/>}/>
+      <Route path='/ArtificialIntelligence' element={<ArtificialIntelligenceMain/>}/>
+      <Route path='/DigitalTwin' element={<DigitalTwinMain/>}/>
 
     </Routes>
   </BrowserRouter>
