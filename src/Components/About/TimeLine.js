@@ -1,11 +1,10 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { useSpring } from "@react-spring/web";
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import { useState, useEffect,useRef} from 'react';
 import "../Assets/CSS/Timeline.css";
 import TimelinePhoto from "../Assets/Images/timelineBack.png";
 
 const TimeLine = () => {
-  const [focusedIndex, setFocusedIndex] = React.useState(0);
   const TimeLineData = [
     {
       id:0,
@@ -51,20 +50,18 @@ const TimeLine = () => {
     },
   ];
 
-  const parallaxSpring = useSpring({
-    opacity: 0.5,
-  });
+  const parallaxLayerRef = useRef(null);
+  const [hasOverflow, setHasOverflow] = useState(false);
 
-  const handleScroll = (offset) => {
-    // Calculate the index based on the scroll offset
-    const calculatedIndex = Math.round(offset);
-    
-    // Set the focused index, but ensure it is within the valid range
-    setFocusedIndex(Math.max(0, Math.min(calculatedIndex, TimeLineData.length - 1)));
-  };
-
-
-  console.log(focusedIndex)
+  useEffect(() => {
+    // Check if the ParallaxLayer has overflow
+    const element = parallaxLayerRef?.current;
+    if (element) {
+      console.log(element)
+      setHasOverflow(element?.isSticky);
+    }
+  }, []);
+  
   return (
     <div className="TimeLine border-b-[1px] border-b-solid border-b-black h-[600px]">
       <div className="background">
@@ -78,23 +75,22 @@ const TimeLine = () => {
         </p>
         <Parallax
           pages={TimeLineData.length}
-          config={{ mass: 1, tension: 280, friction: 24 }}
-          onScroll={(offset) => handleScroll(offset)}
+          config={{ mass: 1, tension: 280, friction: 24 }} scrolling={0.8}
         >
           {TimeLineData.map((item, index) => {
 
             return<ParallaxLayer
               key={index}
               sticky={{ start: index, end: index + 1 }}
+              offset={index}
               style={{
-                ...parallaxSpring,
-                opacity: index === focusedIndex ? 1 : 0.5, // Set opacity based on focus
-              }}
              
+                opacity: hasOverflow ? 1 : 0.5, // Set opacity based on focus
+              }}
+              ref={parallaxLayerRef}
             >
-              <div className="grid grid-cols-2 gap-4"  tabIndex={0} // Make the div focusable
-                onFocus={() => setFocusedIndex(index)} >
-                <div className="card sticky"       >
+              <div className="grid grid-cols-2 gap-4"     >
+                <div className="card sticky">
                   <p>{item.year}</p>
                 </div>
                 <div className="text-white font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
