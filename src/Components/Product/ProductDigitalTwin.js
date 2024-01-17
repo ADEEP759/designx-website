@@ -4,8 +4,8 @@ import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
 const ProductDigitalTwin = () => {
   return (
-    <div className="py-[60px] lg:py-[150px]">
-      <p className="text-white text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium px-[15px] sm:px-[30px] block lg:hidden">
+    <div className="py-[30px] sm:py-[60px] lg:py-[150px]">
+      <p className="text-white text-[22px] md:text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium px-[15px] sm:px-[30px] block lg:hidden">
         Digital Twin
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">
@@ -27,7 +27,7 @@ const ProductDigitalTwin = () => {
           </p>
           <Link to="/DigitalTwin" className="no-underline">
             <button className="blogReadButton flex text-[12px] sm:text-[14px] lg:text-[18px] items-center justify-around w-[120px] sm:w-[151px] h-[40px] rounded-[7px] font-inter font-normal text-white tracking-wide">
-              Read More <img src={readMoreArrow} alt="" />
+              Read More <img src={readMoreArrow} alt="" className="w-[20px] lg:w-[27px]" />
             </button>
           </Link>
         </div>

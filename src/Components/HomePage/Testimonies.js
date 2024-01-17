@@ -42,9 +42,9 @@ const Testimonies = () => {
 
   return (
     <div className="testimonies w-full h-auto py-[20px] px-[10px]">
-      <div className="flex flex-col lg:grid lg:grid-cols-2 pt-[40px] pl-[10px] sm:pl-[78px]">
-        <div className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[200px]">
-          <p className="text-gradientTest tracking-wide font-poppins text-[20px] sm:text-[32px] lg:text-[42px] font-semibold">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 pt-[30px] sm:pt-[40px] pl-[10px] sm:pl-[78px]">
+        <div className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[300px]">
+          <p className="text-gradientTest tracking-wide font-poppins text-[22px] sm:text-[32px] lg:text-[42px] font-semibold">
             What Our Clients Are Saying...
           </p>
           <div className="hidden lg:flex">
@@ -63,7 +63,11 @@ const Testimonies = () => {
           </div>
         </div>
         <div className="mt-[0px] lg:mt-[60px] ml-[0px] lg:ml-[-130px]">
-          <img src={inverted} alt="" className="relative top-[65px] hidden sm:block" />
+          <img
+            src={inverted}
+            alt=""
+            className="relative top-[100px] hidden sm:block"
+          />
           <div className="carousel-container">
             {texts.map((text, index) => {
               const isCurrent = currentIndex === index;
@@ -102,7 +106,7 @@ const Testimonies = () => {
           </div>
         </div>
       </div>
-      <div className="lg:hidden flex justify-center mt-[40px]">
+      <div className="lg:hidden flex justify-center mt-[20px]">
         <img
           src={prevArrow}
           alt=""

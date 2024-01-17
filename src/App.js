@@ -10,6 +10,8 @@ import BlogDetails from './Pages/BlogDetails';
 import IBPMSMain from './Pages/IBPMSMain';
 import ArtificialIntelligenceMain from './Pages/ArtificialIntelligenceMain';
 import DigitalTwinMain from './Pages/DigitalTwinMain';
+import IOTGateWayMain from './Pages/IOTGateWayMain';
+import PrivacyPolicy from './Pages/PrivacyPolicy';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
       <Route path='/iBPMS' element={<IBPMSMain/>}/>
       <Route path='/ArtificialIntelligence' element={<ArtificialIntelligenceMain/>}/>
       <Route path='/DigitalTwin' element={<DigitalTwinMain/>}/>
+      <Route path='/IOTGateway' element={<IOTGateWayMain/>}/>
+      <Route path='/PrivacyPolicy' element={<PrivacyPolicy/>}/>
 
     </Routes>
   </BrowserRouter>

@@ -48,3 +48,12 @@
     top: 10px;
   }
 }
+
+@media screen and (max-width: 639px) {
+  .cardFounder:hover {
+    border-top: 5px solid #0046ff;
+    border-right: 5px solid #0046ff;
+    border-radius: 17px;
+    transition: border 0.3s ease;
+  }
+}

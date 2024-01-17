@@ -5,10 +5,10 @@ import computerVision from "../Assets/Images/computerVision.svg";
 const ComputerVision = () => {
   return (
     <div className="tiltBGProduct">
-      <div className="IIOT py-[50px] lg:py-[100px] px-[15px] sm:px-[30px] lg:px-[80px]">
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0 sm:gap-4 pt-[50px] lg:pt-[100px]">
+      <div className="IIOT py-[30px] sm:py-[50px] lg:py-[100px] px-[15px] sm:px-[30px] lg:px-[80px]">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-0 sm:gap-4 pt-[0px] lg:pt-[100px]">
           <div className=" overlook">
-            <p className="text-white text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium capitalize">
+            <p className="text-white text-[22px] sm:text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium capitalize">
               Computer Vision
             </p>
             <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[36px] hidden lg:block">

@@ -5,10 +5,10 @@ import shop from "../Assets/Images/shopfloorMobile.svg";
 
 const AboutContent = () => {
   return (
-    <div className="aboutContent pb-[60px] pt-[1px] lg:pt-[0px]">
+    <div className="aboutContent pb-[20px] sm:pb-[60px] pt-[1px] lg:pt-[0px]">
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4">
         <div className="mx-[15px] sm:mx-[30px] lg:mx-[80px] mt-[50px]  relative z-[2]">
-          <p className="text-[16px] sm:text-[20px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
+          <p className="text-[22px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
             Bring the revolutionary change to shop floors
           </p>
           <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-[#adadad] font-poppins hidden lg:block tracking-wide leading-[20px] lg:leading-[36px]">
@@ -52,7 +52,7 @@ const AboutContent = () => {
             ultra-modern platform - DFOS (Digital Factory Operating System).
           </p>
         </div>
-        <p className="text-[16px] sm:mtext-[20px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium mx-[15px] sm:mx-[30px] block lg:hidden">
+        <p className="text-[22px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium mx-[15px] sm:mx-[30px] block lg:hidden">
           Switch to Smart Shopfloors with DFOS
         </p>
         <div className="flex justify-center">

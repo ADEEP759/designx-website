@@ -18,8 +18,8 @@ const Founders = () => {
   };
 
   return (
-    <div className="founder px-[15px] sm:px-[50px] lg:px-[10px] 2xl:px-[80px] pt-[100px] pb-[50px]">
-      <p className="text-[16px] sm:text-[20px] md:text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
+    <div className="founder px-[15px] sm:px-[50px] lg:px-[10px] 2xl:px-[80px] pt-[30px] lg:pt-[100px] pb-[50px]">
+      <p className="text-[22px] md:text-[28px] block lg:hidden text-white font-poppins font-medium underline underline-offset-8 decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
       <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4">
@@ -28,11 +28,11 @@ const Founders = () => {
             Meet Our Prominent Innovators
           </p>
           <div className="bg-[#282932] w-[100%] sm:w-[90%] lg:w-[100%] lg:h-[300px] rounded-[17px] pt-[13px] pr-[20px] mt-[20px] sm:mt-[60px] lg:mt-[70px] founderDetails tracking-wide leading-[20px] lg:leading-[36px]">
-            <img src={invertedComma1} alt="" className="ml-[23px]" />
-            <p className="text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[51px]">
+            <img src={invertedComma1} alt="" className="ml-[10px] sm:ml-[23px] w-[30px] lg:w-[59px]" />
+            <p className="text-[18px] sm:text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[30px] sm:ml-[51px]">
               {hoveredFounder ? hoveredFounder.name : "Rajat Srivastav, CEO"}
             </p>
-            <p className="text-[14px] lg:text-[18px] text-white font-poppins font-normal ml-[30px] pl-[20px]">
+            <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-white font-poppins font-normal ml-[10px] sm:ml-[30px] pl-[20px]">
               {hoveredFounder
                 ? hoveredFounder.description
                 : "An enthusiast entrepreneur & visionary with an aim to digitalize and automate the manufacturing industry, combat wastages & up efficiencies."}
@@ -40,7 +40,7 @@ const Founders = () => {
             <img
               src={invertedComma2}
               alt=""
-              className="ml-[87%] sm:ml-[92%] lg:ml-[87%]"
+              className="ml-[92%] sm:ml-[92%] lg:ml-[87%] w-[30px] lg:w-[59px] relative bottom-[10px]"
             />
           </div>
         </div>
@@ -97,7 +97,7 @@ const Founders = () => {
             </div>
           </div>
           <div
-            className="bg-[#282932] w-[100%] h-[250px] rounded-[17px] pt-[65px] cardFounder pl-[20px] sm:hidden flex tracking-wide leading-[20px] lg:leading-[36px]"
+            className="bg-[#282932] w-[100%] h-[150px] rounded-[17px] pt-[10px] cardFounder pl-[10px] sm:hidden flex tracking-wide leading-[20px] lg:leading-[36px]"
             onMouseEnter={() =>
               handleFounderHover({
                 name: "Rajat Srivastav, CEO",
@@ -106,26 +106,26 @@ const Founders = () => {
               })
             }
           >
-            <img src={RajatSir} alt="" className="mx-auto w-[120px] h-[120px] xl:w-[220px] xl:h-[220px]" />
+            <img src={RajatSir} alt="" className="mx-auto my-[12px] w-[100px] h-[100px] xl:w-[220px] xl:h-[220px]" />
             <div>
-            <p className="CEO text-[20px] xl:text-[28px] font-poppins font-medium text-center px-[15px]">
+            <p className="CEO text-[16px] xl:text-[28px] font-poppins font-medium text-center px-[15px]">
               Rajat Srivastav
             </p>
-            <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center px-[15px]">
+            <p className="text-[#a0a0a0] text-[16px] lg:text-[24px] font-poppins text-center px-[15px]">
               CEO
             </p>
             <div className="flex justify-around mt-[20px] px-[15px]">
-              <img src={twitter} alt="" />
-              <img src={facebook} alt="" />
+              <img src={twitter} alt="" className="w-[15px]" />
+              <img src={facebook} alt="" className="w-[15px]" />
               <Link to="https://www.linkedin.com/in/rajat-srivastava-51215b53/" target='_blank'>
                 {" "}
-                <img src={linkedin} alt="" />{" "}
+                <img src={linkedin} alt="" className="w-[15px]" />{" "}
               </Link>
             </div>
             </div>
           </div>
           <div
-            className="bg-[#282932] w-[100%] h-[250px] rounded-[17px] pt-[65px] cardFounder pl-[20px] mt-[20px] sm:hidden flex tracking-wide leading-[20px] lg:leading-[36px]"
+            className="bg-[#282932] mt-[20px] h-[150px] rounded-[17px] pt-[10px] cardFounder pl-[10px] sm:hidden flex tracking-wide leading-[20px] lg:leading-[36px]"
             onMouseEnter={() =>
               handleFounderHover({
                 name: "Nishant Srivastav, CTO",
@@ -134,19 +134,19 @@ const Founders = () => {
               })
             }
           >
-            <img src={NishantSir} alt="" className="mx-auto w-[120px] h-[120px] xl:w-[220px] xl:h-[220px]"/>
+            <img src={NishantSir} alt="" className="mx-auto my-[12px] w-[100px] h-[100px] xl:w-[220px] xl:h-[220px]"/>
             <div>
-            <p className="CEO text-[20px] xl:text-[28px] font-poppins font-medium text-center px-[15px]">
+            <p className="CEO text-[16px] xl:text-[28px] font-poppins font-medium text-center px-[15px]">
               Nishant Srivastav
             </p>
-            <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center px-[15px]">
+            <p className="text-[#a0a0a0] text-[16px] lg:text-[24px] font-poppins text-center px-[15px]">
               CTO
             </p>
             <div className="flex justify-around mt-[20px] px-[15px]">
-              <img src={twitter} alt="" />
-              <img src={facebook} alt="" />
+              <img src={twitter} alt="" className="w-[15px]" />
+              <img src={facebook} alt="" className="w-[15px]" />
               <Link to="https://www.linkedin.com/in/nishant-srivastav-516450114/" target='_blank'>
-                <img src={linkedin} alt="" />
+                <img src={linkedin} alt=""  className="w-[15px]"/>
               </Link>
             </div>
             </div>

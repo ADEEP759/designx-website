@@ -12,3 +12,20 @@
     color: transparent;
   }
 
+  /* .text-gradientTrust{
+    background-image: linear-gradient(90deg, #ffc200, #F0F, #ffc200);
+    animation: step-start 5s linear infinite;
+    -webkit-animation: step-start 5s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+  } */
+
+  /* @keyframes step-start {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  } */

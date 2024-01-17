@@ -4,8 +4,8 @@ import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
 const ESG = () => {
   return (
-    <div className="py-[50px] lg:py-[180px]">
-      <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium mx-[15px] block lg:hidden">
+    <div className="py-[30px] sm:py-[50px] lg:py-[180px]">
+      <p className="text-white text-[22px] sm:text-[24px] lg:text-[28px] font-poppins font-medium mx-[15px] block lg:hidden">
         ESG
       </p>
       <div className="flex flex-col lg:grid grid-cols-2 gap-4 mx-[15px] sm:mx-[30px] lg:mx-[80px]">
@@ -25,7 +25,7 @@ const ESG = () => {
           </p>
           <Link to="/BlogDetails" className="no-underline">
             <button className="blogReadButton flex items-center justify-around w-[120px] sm:w-[151px] h-[40px] text-[12px] sm:text-[14px] lg:text-[18px] rounded-[7px] font-inter font-normal text-white tracking-wide">
-              Read More <img src={readMoreArrow} alt="" />
+              Read More <img src={readMoreArrow} alt="" className="w-[20px] lg:w-[27px]"/>
             </button>
           </Link>
         </div>

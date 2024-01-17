@@ -6,7 +6,7 @@ const ContentOne = () => {
   return (
     <div>
     <div className='backContent h-auto pb-[50px]'>
-    <p className='text-white text-[16px] sm:text-[28px] lg:text-[32px] font-poppins tracking-wide capitalize pt-[42px] lg:pt-[50px] px-[15px] sm:px-[20px] xl:px-[80px] block lg:hidden'>Massive volume of manufacturing data is Overlooked</p>
+    <p className='text-white text-[22px] sm:text-[28px] lg:text-[32px] font-poppins tracking-wide capitalize pt-[42px] lg:pt-[50px] px-[15px] sm:px-[20px] xl:px-[80px] block lg:hidden'>Massive volume of manufacturing data is Overlooked</p>
       <div className='flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[30px] px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px]'>
         <div className=' relative z-[10] mt-[0px] lg:mt-[40px]'>
           <p className='text-white text-[20px] sm:text-[28px] md:text-[32px] tracking-wide lg:text-[36px] font-poppins font-medium capitalize hidden lg:block'>Massive volume of manufacturing data is Overlooked</p>

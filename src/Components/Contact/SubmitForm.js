@@ -10,7 +10,7 @@ const SubmitForm = () => {
     <div className="pt-[85px] md:pt-[150px]">
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mx-[30px] xl:mx-[150px] 2xl:mx-[250px]">
         <div className="w-full lg:w-[390px]">
-          <p className="text-white text-[16px] sm:text-[20px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
+          <p className="text-white text-[22px] md:text-[36px] lg:text-[47px] font-poppins font-semibold">
             One-step closer to digitalization
           </p>
           <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins">
@@ -59,11 +59,13 @@ const SubmitForm = () => {
                   name=""
                   id=""
                   placeholder="It would be great to hear more about your project (optional)"
-                  className="w-[94%] h-[100px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
+                  className="w-[94%] h-[100px] text-[12px] sm:text-[14px] bg-transparent border-[1px] font-light text-white font-poppins border-solid border-white rounded-[9px] p-[10px] focus:outline-none"
                 ></textarea>
               </div>
             </form>
-            <button className="submitButtonForForm w-[121px] h-[42px] text-white text-[18px] font-poppins font-medium mt-[22px] ml-[30%]">Submit</button>
+            <div className="flex justify-center">
+            <button className="submitButtonForForm w-[100px] md:w-[121px] h-[36px] md:h-[42px] text-white text-[14px] md:text-[18px] font-poppins font-medium mt-[22px]">Submit</button>
+            </div>
           </div>
         </div>
       </div>

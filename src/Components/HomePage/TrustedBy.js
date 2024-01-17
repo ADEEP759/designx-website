@@ -1,12 +1,12 @@
 import React from "react";
 import "../Assets/CSS/TrustedBy.css";
-import client from "../Assets/Images/clientLogos.png";
+import client from "../Assets/Images/trustedByHome.svg";
 import { Link } from "react-router-dom";
 
 const TrustedBy = () => {
   return (
     <div className="trustedBy pb-[30px]">
-      <p className="text-gradientTrust text-[16px] tracking-wide sm:text-[20px] lg:text-[38px] font-poppins block lg:hidden pt-[50px] px-[10px] lg:px-[40px] xl:px-[80px] font-medium">
+      <p className="text-gradientTrust tracking-wide text-[22px] lg:text-[38px] font-poppins block lg:hidden pt-[50px] px-[10px] lg:px-[40px] xl:px-[80px] font-medium">
         Trusted by
       </p>
       <hr className="w-[20%] border-[3px] tracking-wide border-solid border-[#0049FF] relative bottom-[17px] block lg:hidden left-[17px]" />

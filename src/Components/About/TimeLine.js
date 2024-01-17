@@ -77,6 +77,8 @@ const TimeLine = () => {
           pages={TimeLineData.length}
           config={{ mass: 1, tension: 280, friction: 24 }} scrolling={0.8}
         >
+            {({ pages, progress }) => (
+            <>
           {TimeLineData.map((item, index) => {
 
             return<ParallaxLayer
@@ -99,7 +101,9 @@ const TimeLine = () => {
               </div>
             </ParallaxLayer>}
           )}
+          </>)}
         </Parallax>
+      
       </div>
     </div>
   );

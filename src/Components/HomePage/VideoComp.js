@@ -22,21 +22,21 @@ const VideoComp = () => {
     <div className="videoContainer">
       <div className="videoComp bg-[#282932] pb-[100px] h-auto ">
       <img src={separation} alt="" className="absolute top-[80px] left-[45%] z-[1] hidden lg:block" />   
-      <p className="text-gradientVidHead block lg:hidden text-[16px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
+      <p className="text-gradientVidHead block lg:hidden text-[22px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
               Harness the power of DFOS
             </p>
-        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] px-[30px] lg:px-[80px] videoContent">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[10px] sm:pt-[50px] lg:pt-[100px] px-[15px] sm:px-[30px] lg:px-[80px] videoContent">
           <div className="pr-[10px] md:pr-[30px] lg:pr-[50px] 2xl:pr-[80px] mt-[0%] lg:mt-[10%]">
             <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins tracking-wide font-medium capitalize hidden lg:block underline underline-offset-8 decoration-[#0049FF]">
               Harness the power of DFOS
             </p>
-            <p className="text-white text-[12px] sm:text-[14px] md:text-[18px] font-normal lg:text-[20px] tracking-wide leading-[36px]">
+            <p className="text-white text-[12px] sm:text-[14px] md:text-[18px] font-normal lg:text-[20px] tracking-wide leading-5 lg:leading-[36px]">
               Take your manufacturing plant to new heights by getting the utmost
               shop floor visibility, connectivity & real-time insights.
             </p>
             <div className="flex items-center">
               <Link to="/Contact">
-                <button className="demo text-white text-[12px] sm:text-[14px] md:text-[18px] 2xl:text-[24px] tracking-wide rounded-[5px] font-medium px-[5px] sm:px-[23px] py-[0px] sm:py-[5px] h-[41px] lg:h-[58px]">
+                <button className="demo text-white text-[12px] sm:text-[14px] md:text-[18px] 2xl:text-[24px] tracking-wide rounded-[5px] font-medium px-[10px] sm:px-[23px] py-[0px] sm:py-[5px] h-[41px] lg:h-[58px]">
                   Request a Demo
                 </button>
               </Link>
@@ -51,7 +51,7 @@ const VideoComp = () => {
             </button>
             </div>
           </div>
-          <div className="w-[664px] border-[10px] border-solid border-[#0046FF] rounded-[15px] video-container relative overflow-hidden">
+          <div className="w-[664px] border-[5px] lg:border-[10px] border-solid border-[#0046FF] rounded-[15px] video-container relative overflow-hidden">
             <div>
               {!isPlaying && (
                 <div className="relative">
