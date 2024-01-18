@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeaderDemo from "../Components/Common/HeaderDemo";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Common/Footer";
 
 const PrivacyPolicy = () => {
+ 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
+
   return (
     <div>
     <div className="px-[15px] sm:px-[50px] lg:px-[80px]">

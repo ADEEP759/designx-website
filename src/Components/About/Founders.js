@@ -27,7 +27,7 @@ const Founders = () => {
           <p className="text-[38px] lg:text-[46px] hidden lg:block text-white font-poppins font-medium underline underline-offset-[10px] decoration-[#7292f1]">
             Meet Our Prominent Innovators
           </p>
-          <div className="bg-[#282932] w-[100%] sm:w-[90%] lg:w-[100%] lg:h-[300px] rounded-[17px] pt-[13px] pr-[20px] mt-[20px] sm:mt-[60px] lg:mt-[70px] founderDetails tracking-wide leading-[20px] lg:leading-[36px]">
+          <div className="bg-[#282932] w-[100%] sm:w-[90%] lg:w-[100%] lg:h-[300px] rounded-[17px] pt-[13px] pr-[20px] mt-[20px] sm:mt-[60px] lg:mt-[70px] founderDetails tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
             <img src={invertedComma1} alt="" className="ml-[10px] sm:ml-[23px] w-[30px] lg:w-[59px]" />
             <p className="text-[18px] sm:text-[24px] lg:text-[28px] text-white font-poppins font-medium ml-[30px] sm:ml-[51px]">
               {hoveredFounder ? hoveredFounder.name : "Rajat Srivastav, CEO"}

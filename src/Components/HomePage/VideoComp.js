@@ -21,7 +21,7 @@ const VideoComp = () => {
   return (
     <div className="videoContainer">
       <div className="videoComp bg-[#282932] pb-[100px] h-auto ">
-      <img src={separation} alt="" className="absolute top-[80px] left-[45%] z-[1] hidden lg:block" />   
+      <img src={separation} alt="" className="absolute top-[80px] left-[47%] z-[1] hidden lg:block" />   
       <p className="text-gradientVidHead block lg:hidden text-[22px] sm:text-[28px] md:text-[38px] ml-[15px] sm:ml-[30px] tracking-wide pt-[45px] text-white font-poppins capitalize font-medium underline underline-offset-8 decoration-[#00A1FF]">
               Harness the power of DFOS
             </p>
@@ -30,7 +30,7 @@ const VideoComp = () => {
             <p className="text-gradientVid text-[28px] md:text-[38px] text-white font-poppins tracking-wide font-medium capitalize hidden lg:block underline underline-offset-8 decoration-[#0049FF]">
               Harness the power of DFOS
             </p>
-            <p className="text-white text-[12px] sm:text-[14px] md:text-[18px] font-normal lg:text-[20px] tracking-wide leading-5 lg:leading-[36px]">
+            <p className="text-white text-[12px] sm:text-[14px] md:text-[18px] font-normal lg:text-[20px] tracking-wide leading-5 lg:leading-[30px] xl:leading-[36px]">
               Take your manufacturing plant to new heights by getting the utmost
               shop floor visibility, connectivity & real-time insights.
             </p>

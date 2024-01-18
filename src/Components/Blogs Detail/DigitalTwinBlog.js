@@ -1,5 +1,6 @@
 import React from "react";
 import ArtificialIntelligence from "../Assets/Images/ArtificialDetailed.png";
+import { Link } from "react-router-dom";
 
 const DigitalTwinBlog = () => {
   return (
@@ -9,7 +10,13 @@ const DigitalTwinBlog = () => {
         <div className="block lg:grid lg:grid-cols-2 gap-4 relative z-[1]">
           <div className="pl-[50px] lg:pl-[100px] pr-[50px]">
             <p className="text-white text-[14px] lg:text-[18px] font-inter mt-[31px]">
-              Home/ Blog
+            <Link to="/" className="no-underline text-white">
+                Home
+              </Link>{" "}
+              /{" "}
+              <Link to="/Blogs" className="no-underline text-white">
+                Blog
+              </Link>
             </p>
             <p className="text-white text-[28px] sm:text-[32px] lg:text-[42px] font-robotoSlab">
               Stepping into the Future: Your Factory in Your Pocket with a

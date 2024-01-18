@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/CSS/IIOTProduct.css";
-import IIOTMachine from "../Assets/Images/IIOTMachine.png";
+import IIOTMachine from "../Assets/Images/IIOTMachine.svg";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
 const ProductIIOT = () => {
@@ -15,7 +15,7 @@ const ProductIIOT = () => {
             <p className="text-white text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium capitalize hidden lg:block">
               IIOT
             </p>
-            <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[36px]">
+            <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               With the assistance of DFOS’s product, Hectos, all your data from
               machines can be automated. We provide you with an IOT gateway,
               Hectos, which is a device that connects all the machines installed
@@ -31,7 +31,7 @@ const ProductIIOT = () => {
               </button>
             </Link>
           </div>
-          <div className="checkImage flex justify-center lg:justify-start pl-[0px] md:pl-[50px] lg:pl-[80px]">
+          <div className="checkImage flex justify-center lg:justify-start pl-[0px]">
             <img src={IIOTMachine} alt="" className="" />
           </div>
         </div>

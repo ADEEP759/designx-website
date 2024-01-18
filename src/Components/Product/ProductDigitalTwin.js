@@ -1,5 +1,5 @@
 import React from "react";
-import digitalTwin from "../Assets/Images/shopfloorView.png";
+import digitalTwin from "../Assets/Images/shopfloorView.svg";
 import readMoreArrow from "../Assets/Images/readMoreArrow.svg";
 import { Link } from "react-router-dom";
 const ProductDigitalTwin = () => {
@@ -16,7 +16,7 @@ const ProductDigitalTwin = () => {
           <p className="text-white text-[24px] lg:text-[28px] font-poppins font-medium hidden lg:block">
             Digital Twin
           </p>
-          <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[36px]">
+          <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
             We built a 3D digital twin of your complete shopfloor, which helps
             you check the functioning even when you aren’t around. Manage your
             manufacturing hub from anywhere around the globe with your

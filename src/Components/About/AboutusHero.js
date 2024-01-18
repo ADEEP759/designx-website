@@ -1,6 +1,6 @@
 import React from "react";
 import "../Assets/CSS/AboutusHero.css";
-import AboutHero from "../Assets/Images/aboutHeroImage.png";
+import AboutHero from "../Assets/Images/aboutHeroImage.svg";
 import spring from "../Assets/Images/backgroundSprings.svg";
 import Marquee from "react-fast-marquee";
 import unilever from "../Assets/Images/unilever.svg";
@@ -15,11 +15,11 @@ const AboutusHero = () => {
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4 mx-[10px] lg:mx-[50px]">
         <img src={AboutHero} alt="" className="relative z-[1]" />
         <div>
-          <div className="text-[35px] lg:text-[43px] px-[15px] sm:px-[20px] mt-[0px] lg:mt-[15%] relative z-[1]">
-            <p className="text-[20px] md:text-[35px] lg:text-[43px] text-white font-poppins font-medium tracking-wide leading-[20px] lg:leading-[36px]">
+          <div className="px-[15px] sm:px-[20px] mt-[0px] lg:mt-[10%] xl:mt-[15%] relative z-[1]">
+            <p className="text-[20px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
               Inspire. Aspire. Automate
             </p>
-            <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins w-[100%] md:w-[89%] tracking-wide leading-[20px] lg:leading-[36px]">
+            <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] text-[#adadad] font-poppins w-[100%] md:w-[89%] tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
               Craft a new manufacturing era to attain maximum efficiency. With
               DesignX, step towards a digital future to reach the zenith of
               success.

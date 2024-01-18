@@ -19,10 +19,10 @@ const TrustedBy = () => {
             Trusted by
           </p>
           <hr className="w-[20%] border-[3px] border-solid border-[#0049FF] relative bottom-[17px] hidden lg:block" />
-          <p className="text-[20px] sm:text-[28px] md:text-[32px] lg:text-[36px] tracking-wide text-white font-poppins leading-[30px] lg:leading-[36px] font-medium">
+          <p className="text-[20px] sm:text-[28px] md:text-[32px] lg:text-[36px] tracking-wide text-white font-poppins font-medium">
             Leverage the Future of Shop Floor Transformation
           </p>
-          <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide text-white leading-[20px] lg:leading-[36px] font-poppins font-light">
+          <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide text-white leading-[20px] lg:leading-[30px] xl:leading-[36px] font-poppins font-light">
             Some of the significant members of the manufacturing industry have
             transformed their shop floors by leveraging the SaaS-based platform,
             DFOS and exhibited exemplary digital outcomes.

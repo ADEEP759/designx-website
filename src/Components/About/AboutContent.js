@@ -1,5 +1,5 @@
 import React from "react";
-import checkImage from "../Assets/Images/aboutUsImageone.png";
+import checkImage from "../Assets/Images/aboutUsImageone.svg";
 import spring from "../Assets/Images/backgroundSprings.svg";
 import shop from "../Assets/Images/shopfloorMobile.svg";
 
@@ -7,17 +7,17 @@ const AboutContent = () => {
   return (
     <div className="aboutContent pb-[20px] sm:pb-[60px] pt-[1px] lg:pt-[0px]">
       <div className="flex flex-col lg:grid lg:grid-cols-2 gap-4">
-        <div className="mx-[15px] sm:mx-[30px] lg:mx-[80px] mt-[50px]  relative z-[2]">
+        <div className="mx-[15px] sm:mx-[30px] xl:mx-[80px] mt-[50px]  relative z-[2]">
           <p className="text-[22px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium">
             Bring the revolutionary change to shop floors
           </p>
-          <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-[#adadad] font-poppins hidden lg:block tracking-wide leading-[20px] lg:leading-[36px]">
+          <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-[#adadad] font-poppins hidden lg:block tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
             Without a functional plan, managing shop floors is like solving
             Chinese arithmetic equations. Not exaggerating, but from equipment
             breaks to human errors; mistakes & slipups keep arising, and hence
             it becomes more challenging to manage manually by the workforce.
           </p>
-          <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-[#adadad] font-poppins hidden lg:block tracking-wide leading-[20px] lg:leading-[36px]">
+          <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-[#adadad] font-poppins hidden lg:block tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
             But with DesignX as your digital partner, you can light a fire &
             bring a revolutionary change to your shop floor. Automate your
             manufacturing hub and mark your beginning in pre-creating the
@@ -29,7 +29,7 @@ const AboutContent = () => {
           <img
             src={checkImage}
             alt=""
-            className="relative z-[2] mt-[0px] lg:mt-[50px]"
+            className="relative z-[2] mt-[0px]"
           />
           <img
             src={spring}

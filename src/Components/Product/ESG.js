@@ -16,7 +16,7 @@ const ESG = () => {
           <p className="text-white text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium hidden lg:block tracking-wide">
             ESG
           </p>
-          <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[36px]">
+          <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px]">
             Enhance long-term sustainability, attract responsible investors, and
             contribute positively to society and the planet by embracing
             environment social governance principles with DFOS. ESG is a sound

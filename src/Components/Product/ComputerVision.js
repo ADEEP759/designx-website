@@ -11,7 +11,7 @@ const ComputerVision = () => {
             <p className="text-white text-[22px] sm:text-[24px] lg:text-[28px] xl:text-[32px] font-poppins font-medium capitalize">
               Computer Vision
             </p>
-            <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[36px] hidden lg:block">
+            <p className="text-[#C8C8C8] text-[12px] sm:text-[14px] lg:text-[18px] font-poppins tracking-wide leading-[20px] lg:leading-[30px] xl:leading-[36px] hidden lg:block">
               Capture shop floor insights using the algorithms of computer
               vision to ensure safer operations, eliminate errors & enhance the
               manufacturing environment safety. Extract meaningful insights
