@@ -25,7 +25,7 @@ function App() {
       <Route path='/Resources' element={<Resources/>}/>
       <Route path='/Contact' element={<Contact/>}/>
       <Route path='/Blogs' element={<Blogs/>}/>
-      <Route path='/BlogDetails' element={<BlogDetails/>}/>
+      <Route path='/IIOT' element={<BlogDetails/>}/>
       <Route path='/iBPMS' element={<IBPMSMain/>}/>
       <Route path='/ArtificialIntelligence' element={<ArtificialIntelligenceMain/>}/>
       <Route path='/DigitalTwin' element={<DigitalTwinMain/>}/>

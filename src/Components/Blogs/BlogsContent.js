@@ -24,7 +24,7 @@ const BlogsContent = () => {
           <p className="text-[12px] md:text-[14px] xl:text-[18px] text-[#adadad] font-medium">
             Unveil a plethora of opportunities with IIOT solutions.
           </p>
-          <Link to="/BlogDetails" className="no-underline">
+          <Link to="/IIOT" className="no-underline">
             <button className="blogReadButton flex items-center justify-around w-[120px] sm:w-[151px] h-[40px] rounded-[7px] font-inter text-[12px] sm:text-[14px] text-white">
               Read More{" "}
               <img

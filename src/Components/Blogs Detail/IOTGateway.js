@@ -1,5 +1,5 @@
 import React from "react";
-import Hectos from "../Assets/Images/hectosDetail.png";
+import Hectos from "../Assets/Images/hectosDetail.svg";
 import { Link } from "react-router-dom";
 const IOTGateway = () => {
   return (

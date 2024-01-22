@@ -1,3 +1,23 @@
 .footerBack{
     background-color: #282932;
 }
+
+.email_link{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.email_link:hover{
+    color: #0046FF;
+}
+
+.footer_heading{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer_heading:hover{
+    color: #0046FF;
+}

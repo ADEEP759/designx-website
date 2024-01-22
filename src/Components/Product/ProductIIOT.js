@@ -25,7 +25,7 @@ const ProductIIOT = () => {
               <br />
               So, allow this device to make your shop floor automated in one go!
             </p>
-            <Link to="/BlogDetails" className="no-underline">
+            <Link to="/IIOT" className="no-underline">
               <button className="blogReadButton flex text-[12px] sm:text-[14px] lg:text-[18px] items-center justify-around w-[120px] sm:w-[151px] h-[40px] rounded-[7px] font-inter font-normal text-white tracking-wide">
                 Read More <img src={readMoreArrow} alt="" className="w-[20px] lg:w-[27px]"/>
               </button>
