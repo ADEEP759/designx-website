@@ -85,7 +85,7 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Certifications</p>
             <p className="block sm:flex">
               <img src={isms} alt="" className="w-[50px] h-[50px] mr-[10px]" />
-              <img src={ssl} alt="" className="w-[70px] h-[50px] mt-[5px] sm:mt-[0px] ml-[0px] sm:ml-[10px]" />
+              <img src={ssl} alt="" className="w-[75px] h-[50px] mt-[5px] sm:mt-[0px] ml-[0px] sm:ml-[10px]" />
             </p>
           </div>
         </div>

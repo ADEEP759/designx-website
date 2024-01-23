@@ -7,9 +7,10 @@ import '../Components/Assets/CSS/Product.css'
 import ProductDigitalTwin from '../Components/Product/ProductDigitalTwin'
 import ComputerVision from '../Components/Product/ComputerVision'
 import ESG from '../Components/Product/ESG'
-import Wheel from '../Components/Product/Wheel'
+// import Wheel from '../Components/Product/Wheel'
 import Approach from '../Components/Product/Approach'
 import Footer from '../Components/Common/Footer'
+import WheelChange from '../Components/Product/WheelChange'
 // import CardDemo from '../Components/Product/CardDemo'
 // import productBack from '../Components/Assets/Images/aboutUsBackground.png';
 
@@ -27,7 +28,8 @@ const Product = () => {
       <ProductDigitalTwin/>
       <ComputerVision/>
       <ESG/>
-      <Wheel/>
+      {/* <Wheel/> */}
+      <WheelChange/>
       <Approach/>
       {/* <CardDemo/> */}
       <Footer/>

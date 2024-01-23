@@ -9,11 +9,11 @@ const IBPMS = () => {
         <div className="block lg:grid lg:grid-cols-2 gap-4 relative z-[1]">
           <div className="pl-[50px] lg:pl-[100px] pr-[50px]">
             <p className="text-white text-[14px] lg:text-[18px] font-inter mt-[31px]">
-            <Link to="/" className="no-underline text-white">
+            <Link to="/" className="homeButton">
                 Home
               </Link>{" "}
               /{" "}
-              <Link to="/Blogs" className="no-underline text-white">
+              <Link to="/Blogs" className="homeButton">
                 Blog
               </Link>
             </p>

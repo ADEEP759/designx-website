@@ -23,13 +23,13 @@ const TrustedBy = () => {
             Leverage the Future of Shop Floor Transformation
           </p>
           <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide text-white leading-[20px] lg:leading-[30px] xl:leading-[36px] font-poppins font-light">
-            Some of the significant members of the manufacturing industry have
+            Some of the leading players of the manufacturing industry have
             transformed their shop floors by leveraging the SaaS-based platform,
             DFOS and exhibited exemplary digital outcomes.
           </p>
-          <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide leading-[36px] text-white font-poppins font-light">
+          {/* <p className="text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide leading-[36px] text-white font-poppins font-light">
             Empower your shop floors with DFOS.
-          </p>
+          </p> */}
           <Link to="/Contact">
             <button className="bg-white text-[#001141] text-[12px] sm:text-[14px] lg:text-[18px] tracking-wide p-[10px] rounded-[5px] font-poppins font-medium">
               Learn More

@@ -1,3 +1,22 @@
-.dataDriven:hover{
+/* .dataDriven:hover{
     background: linear-gradient(90deg, #0073FB, 100% #000000, 0%);
+} */
+
+.improve:hover {
+  background: linear-gradient(to right, #0073fb 100%, #000000 0%);
+}
+.hoverable {
+  fill-opacity: 0.7;
+}
+.hoverable-path.path2:hover {
+  fill-opacity: 0.7;
+}
+.hoverable-path.path3:hover {
+  fill-opacity: 0.7;
+}
+.hoverable-path.path4:hover {
+  fill-opacity: 0.7;
+}
+.hoverable-path.path5:hover {
+  fill-opacity: 0.7;
 }

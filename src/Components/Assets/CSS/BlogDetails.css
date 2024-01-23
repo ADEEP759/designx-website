@@ -5,3 +5,13 @@
 .blogHeaderBack{
     background: linear-gradient(120deg, rgba(10,0,37,1) 35%, rgba(25,78,132,1) 90%);
 }
+
+.homeButton{
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.homeButton:hover{
+    color: #0046FF;
+}
