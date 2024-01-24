@@ -8,6 +8,7 @@ import VideoComp from '../Components/HomePage/VideoComp'
 import Testimonies from '../Components/HomePage/Testimonies'
 import Footer from '../Components/Common/Footer'
 import HeaderDemo from '../Components/Common/HeaderDemo'
+import ScrollToTop from '../Components/Common/ScrollToTop'
 // import TestimoniesClient from '../Components/HomePage/TestimoniesClient'
 
 const HomePage = () => {
@@ -26,6 +27,7 @@ const HomePage = () => {
       {/* <TestimoniesClient/> */}
       <Testimonies/>
       <Footer/>
+      <ScrollToTop/>
     </div>
   )
 }

@@ -11,6 +11,7 @@ import ESG from '../Components/Product/ESG'
 import Approach from '../Components/Product/Approach'
 import Footer from '../Components/Common/Footer'
 import WheelChange from '../Components/Product/WheelChange'
+import ScrollToTop from '../Components/Common/ScrollToTop'
 // import CardDemo from '../Components/Product/CardDemo'
 // import productBack from '../Components/Assets/Images/aboutUsBackground.png';
 
@@ -33,6 +34,7 @@ const Product = () => {
       <Approach/>
       {/* <CardDemo/> */}
       <Footer/>
+      <ScrollToTop/>
     </div>
   )
 }

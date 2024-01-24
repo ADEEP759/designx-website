@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import HeaderDemo from "../Components/Common/HeaderDemo";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Common/Footer";
+import ScrollToTop from "../Components/Common/ScrollToTop";
 
 const PrivacyPolicy = () => {
  
@@ -249,6 +250,7 @@ const PrivacyPolicy = () => {
       <br />
     </div>
       <Footer/>
+      <ScrollToTop/>
     </div>
   );
 };

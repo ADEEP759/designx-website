@@ -10,8 +10,8 @@ const ClientsTrust = () => {
   return (
     <div className=' mx-[30px] xl:mx-[150px] 2xl:mx-[250px] mt-[40px] pb-[20px]'>
       <div>
-        <p className='text-[20px] text-white font-poppins font-medium' >Trusted by</p>
-        <div className="border-b-[3px] border-solid border-white w-[19%]"></div>
+        <p className='text-[20px] text-white font-poppins font-medium'><span className='underline underline-offset-8 decoration-[2px]'>Trusted </span>by</p>
+        {/* <div className="border-b-[3px] border-solid border-white w-[19%]"></div> */}
         <div className='grid grid-cols-2 md:grid-cols-3 gap-4 lg:flex justify-between mt-[20px]'>
             <img src={unilever} alt="" />
             <img src={amber} alt="" />

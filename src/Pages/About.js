@@ -7,6 +7,7 @@ import Founders from "../Components/About/Founders";
 // import TimeLine from "../Components/About/TimeLine";
 import Footer from '../Components/Common/Footer'
 // import Main from "../Components/About/Main";
+import ScrollToTop from '../Components/Common/ScrollToTop'
 
 const About = () => {
   useEffect(() => {
@@ -23,6 +24,7 @@ const About = () => {
       {/* <Main /> */}
       {/* <TimeLine/> */}
       <Footer/>
+      <ScrollToTop/>
     </div>
   );
 };

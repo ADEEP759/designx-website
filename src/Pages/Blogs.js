@@ -4,6 +4,7 @@ import '../Components/Assets/CSS/Blogs.css'
 import BlogsHeader from '../Components/Blogs/BlogsHeader'
 import BlogsContent from '../Components/Blogs/BlogsContent'
 import Footer from '../Components/Common/Footer'
+import ScrollToTop from '../Components/Common/ScrollToTop'
 
 const Blogs = () => {
 
@@ -17,6 +18,7 @@ const Blogs = () => {
         <BlogsHeader/>
         <BlogsContent/>
         <Footer/> 
+        <ScrollToTop/>
     </div>
   )
 }

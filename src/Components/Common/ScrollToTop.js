@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import scrollTop from '../Assets/Images/topScroll.svg'
 const ScrollToTop = () => {
   const [showScrollBtn, setshowScrollBtn] = useState(false);
   useEffect(() => {
@@ -15,15 +15,16 @@ const ScrollToTop = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <div className="fixed top-[50px] bottom-0">
+    <div className="fixed bottom-0 right-2 z-10">
     {" "}
     {showScrollBtn && (
-        <button
-            className="btn btn-primary"
+        <img
+            src={scrollTop}
             onClick={backToTop}
-            id = "ScrollToTopIcon">
-                top
-                </button>
+            id = "ScrollToTopIcon"
+                alt=""
+                className="cursor-pointer w-[70px]"
+                />
     )}{" "}
 </div>
   )

@@ -3,6 +3,7 @@ import HeaderDemo from '../Components/Common/HeaderDemo'
 import '../Components/Assets/CSS/BlogDetails.css'
 import HeaderBlogDetails from '../Components/Blogs Detail/HeaderBlogDetails'
 import DetailsOfBlog from '../Components/Blogs Detail/DetailsOfBlog'
+import ScrollToTop from '../Components/Common/ScrollToTop'
 
 const BlogDetails = () => {
 
@@ -15,6 +16,7 @@ const BlogDetails = () => {
       <HeaderDemo/>
       <HeaderBlogDetails/>
       <DetailsOfBlog/>
+      <ScrollToTop/>
     </div>
   )
 }

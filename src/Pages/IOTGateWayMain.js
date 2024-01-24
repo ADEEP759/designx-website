@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import HeaderDemo from '../Components/Common/HeaderDemo'
 import IOTGateway from '../Components/Blogs Detail/IOTGateway'
+import ScrollToTop from '../Components/Common/ScrollToTop';
 
 const IOTGateWayMain = () => {
     useEffect(() => {
@@ -10,6 +11,7 @@ const IOTGateWayMain = () => {
     <div>
       <HeaderDemo/>
       <IOTGateway/>
+      <ScrollToTop/>
     </div>
   )
 }

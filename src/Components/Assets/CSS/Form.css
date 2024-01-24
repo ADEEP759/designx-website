@@ -6,12 +6,14 @@
     color: white !important;
 }
 
+
 .MuiInput-underline{
     border-bottom: 1px solid white !important;
 }
 
 .css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
     font-size: 12px !important;
+    color: #c8c8c8 !important;
 }
 
 .css-l4u8b9-MuiInputBase-root-MuiInput-root{

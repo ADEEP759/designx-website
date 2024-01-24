@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import HeaderDemo from '../Components/Common/HeaderDemo';
 import ESG from '../Components/Blogs Detail/ESG';
+import ScrollToTop from '../Components/Common/ScrollToTop';
 
 const ESGMain = () => {
     useEffect(() => {
@@ -10,6 +11,7 @@ const ESGMain = () => {
     <div>
         <HeaderDemo/>
         <ESG/>
+        <ScrollToTop/>
     </div>
   )
 }

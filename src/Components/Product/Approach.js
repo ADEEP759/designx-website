@@ -1,7 +1,7 @@
 import React from 'react'
-import Cardone from '../Assets/Images/Card1.png'
-import Cardtwo from '../Assets/Images/Card2.png'
-import Cardthree from '../Assets/Images/Card3.png'
+import Cardone from '../Assets/Images/Card1.svg'
+import Cardtwo from '../Assets/Images/Card2.svg'
+import Cardthree from '../Assets/Images/Card3.svg'
 import '../Assets/CSS/ProductCards.css'
 const Approach = () => {
   return (

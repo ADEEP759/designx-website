@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import HeaderDemo from '../Components/Common/HeaderDemo'
 import DigitalTwinBlog from '../Components/Blogs Detail/DigitalTwinBlog'
+import ScrollToTop from '../Components/Common/ScrollToTop';
 
 const DigitalTwinMain = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const DigitalTwinMain = () => {
     <div>
       <HeaderDemo/>
       <DigitalTwinBlog/>
+      <ScrollToTop/>
     </div>
   )
 }

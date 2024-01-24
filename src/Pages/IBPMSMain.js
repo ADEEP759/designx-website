@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import HeaderDemo from '../Components/Common/HeaderDemo'
 import IBPMS from '../Components/Blogs Detail/IBPMS'
+import ScrollToTop from '../Components/Common/ScrollToTop';
 
 const IBPMSMain = () => {
   useEffect(() => {
@@ -10,6 +11,7 @@ const IBPMSMain = () => {
     <div>
       <HeaderDemo/>
       <IBPMS/>
+      <ScrollToTop/>
     </div>
   )
 }

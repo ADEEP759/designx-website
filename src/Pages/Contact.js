@@ -3,6 +3,7 @@ import "../Components/Assets/CSS/Contact.css"
 import HeaderDemo from '../Components/Common/HeaderDemo'
 import SubmitForm from '../Components/Contact/SubmitForm'
 import ClientsTrust from '../Components/Contact/ClientsTrust'
+import ScrollToTop from '../Components/Common/ScrollToTop'
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -12,6 +13,7 @@ const Contact = () => {
       <HeaderDemo/>
       <SubmitForm/>
       <ClientsTrust/>
+      <ScrollToTop/>
     </div>
   )
 }
