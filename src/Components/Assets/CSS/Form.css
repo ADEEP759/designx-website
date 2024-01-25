@@ -32,6 +32,10 @@
     color: white !important;
 }
 
+.css-1d1r5q-MuiFormHelperText-root.Mui-error{
+    font-family: "Poppins", sans-serif;
+}
+
 @media (max-width:639px){
 .MuiFormControl-root{
     margin-top: 10px !important;
