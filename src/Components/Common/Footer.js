@@ -5,6 +5,8 @@ import linkedin from "../Assets/Images/linkedinIcon.svg";
 import logo from "../Assets/Images/designXlogo.svg";
 import isms from '../Assets/Images/isms.png'
 import ssl from '../Assets/Images/SSL-Secure-Connection.png'
+import email from '../Assets/Images/emailIcon.svg'
+import phone from '../Assets/Images/phoneIcon.svg'
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -12,26 +14,24 @@ const Footer = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <div>
           <div>
-            <p className="text-[16px] sm:text-[20px] font-medium">Platform</p>
-            <Link to="/Product" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+            <p className="text-[16px] sm:text-[20px] font-medium">Product</p>
+            <Link to="/Product" className=" no-underline text-white">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 DFOS
               </p>
             </Link>
-            {/* <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Digital Process</p></Link> */}
-            <Link to="/IIOT" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+            <Link to="/IIOT" className=" no-underline text-white">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 IIOT
               </p>
             </Link>
             <Link to="/DigitalTwin" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 Digital Twin
               </p>
             </Link>
-            {/* <Link to="/Product" className="no-underline text-white"><p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">Computer vision</p></Link> */}
-            <Link to="/ESG" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+            <Link to="/ESG" className=" no-underline text-white">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 ESG
               </p>
             </Link>
@@ -42,17 +42,17 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Company</p>
             <Link to="/Aboutus" className="no-underline text-white">
               {" "}
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 About Us
               </p>{" "}
             </Link>
-            <Link to="/Blogs" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+            <Link to="/Blogs" className=" no-underline text-white">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 Blogs
               </p>
             </Link>
             <Link to="/PrivacyPolicy" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 Privacy Policy
               </p>
             </Link>
@@ -60,7 +60,7 @@ const Footer = () => {
             {/* <p className="font-light text-[12px] sm:text-[16px]">Newsletter</p> */}
             <Link to="/Contact" className="no-underline text-white">
               {" "}
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]">
+              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
                 Contact Us
               </p>{" "}
             </Link>
@@ -69,18 +69,21 @@ const Footer = () => {
         <div>
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Contact </p>
-            <p className="font-light text-[12px] sm:text-[16px]">
-              Email:{" "}
+            <p className="font-light text-[12px] sm:text-[16px] flex items-center">
+             <span> <img src={email} alt="" /></span> &nbsp; 
               <Link to="mailto:info@designx.in" className="email_link">
                 {" "}
-                info@designx.in
+              : info@designx.in
               </Link>
             </p>
-            <p className="font-light text-[12px] sm:text-[16px]">
-              Phone: <Link to="tel:9045012061" className="email_link">9045012061</Link>,{" "}
-              <Link to="tel:8126084680" className="email_link">8126084680</Link>
+            <p className="font-light text-[12px] sm:text-[16px] flex items-center">
+             <img src={phone} alt="" />
+             <Link to="tel:9045012061" className="email_link">: 9045012061</Link>,{" "}
+             &nbsp;
+             <Link to="tel:8126084680" className="email_link">8126084680</Link>
             </p>
           </div>
+          <br />
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Certifications</p>
             <p className="block sm:flex">
@@ -97,21 +100,22 @@ const Footer = () => {
               110016
             </p>
             <br />
-            <br />
-            <br />
-            <br />
+
+            <div>
+            <p className="text-[16px] sm:text-[20px] font-medium">Connect with us</p>
             <p className="flex">
               <Link to="https://www.facebook.com/designx.in" target="_blank">
                 {" "}
-                <img src={facebook} alt="" className="mr-[16px]" />{" "}
+                <img src={facebook} alt="" className="mr-[12px] w-[45px] h-[45px]" />{" "}
               </Link>
               <Link
                 to="https://www.linkedin.com/company/nrv-designx/"
                 target="_blank"
               >
-                <img src={linkedin} alt="" className="ml-[16px]" />{" "}
+                <img src={linkedin} alt="" className="ml-[12px] w-[45px] h-[45px]" />{" "}
               </Link>
             </p>
+            </div>
           </div>
         </div>
       </div>

@@ -17,6 +17,16 @@
   /* border: 5px solid #0046ff; */
   background: rgba(0, 0, 0, 0.57);
   box-shadow: 30px 18px 39px 0px rgba(0, 0, 0, 0.25);
+  border: 5px solid #0046ff;
+  transition: border 0.3s ease; 
+}
+.tryNow {
+  border-radius: 12px;
+  /* border: 5px solid #0046ff; */
+  background: rgba(0, 0, 0, 0.57);
+  box-shadow: 30px 18px 39px 0px rgba(0, 0, 0, 0.25);
+  border: 5px solid transparent;
+  transition: border 0.3s ease; 
 }
 
 .submitButtonForForm {
@@ -49,13 +59,14 @@
   box-shadow: 30px 18px 39px 0px rgba(0, 0, 0, 0.25);
 }
 
-.bookDemo {
+/* .bookDemo {
   cursor: pointer;
   border: 1px solid transparent;
-  transition: border 0.3s ease; 
-}
-
-.bookDemo:hover {
   border: 5px solid #0046ff;
-}
+  transition: border 0.3s ease; 
+} */
+
+/* .bookDemo:hover {
+  border: 5px solid #0046ff;
+} */
 

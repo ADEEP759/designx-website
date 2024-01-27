@@ -35,7 +35,7 @@ const SubmitForm = () => {
             an end. Switch to digital transformation today with DesignX!
           </p>
           <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
-            <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+            <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Book a Demo
               </p>
@@ -43,7 +43,7 @@ const SubmitForm = () => {
                 Request a demo of one of our solutions.
               </p>
             </div>
-            <div className="bookDemo ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] cursor-pointer focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+            <div className="tryNow ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="text-white  text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Try Now !
               </p>

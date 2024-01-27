@@ -16,3 +16,14 @@
     background-color: transparent;
     backdrop-filter: blur(100px);
 }
+
+/* .pagesNav{
+    position: relative;
+    right: 400px;
+}
+
+@media screen and (max-width:1280px){
+    .pagesNav{
+      right: 300px;
+    }
+  } */

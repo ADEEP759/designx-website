@@ -5,7 +5,7 @@ import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
 // import downArrow from'../Assets/Images/downArrow.svg';
-import { Tooltip } from 'react-tooltip';
+// import { Tooltip } from 'react-tooltip';
 // import ScrollToTop from "./ScrollToTop";
 
 const navigation = [
@@ -13,7 +13,8 @@ const navigation = [
   { name: "Product", to: "/Product" },
   { name: "About Us", to: "/Aboutus" },
   // { name: "Resources", to: "/Resources" },
-  { name: "Blogs", to:"/Blogs"}
+  { name: "Blogs", to:"/Blogs"},
+  // { name: "Contact Us", to:"/Contact"},
 ];
 const HeaderDemo = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -88,7 +89,7 @@ const HeaderDemo = () => {
             >
               Contact Us
             </Link>
-            <button
+            {/* <button
             data-tooltip-id="my-tooltip"
             data-tooltip-content="Coming Soon"
               to="#"
@@ -96,7 +97,7 @@ const HeaderDemo = () => {
             >
               Demo
             </button>
-            <Tooltip id="my-tooltip" />
+            <Tooltip id="my-tooltip" /> */}
           </div>
         </nav>
         <Dialog
@@ -141,7 +142,7 @@ const HeaderDemo = () => {
                   >
                     Contact Us
                   </Link>
-                  <button
+                  {/* <button
                   data-tooltip-id="my-tooltip"
                   data-tooltip-content="Coming Soon"
                     to="#"
@@ -149,7 +150,7 @@ const HeaderDemo = () => {
                   >
                     Demo
                   </button>
-                  <Tooltip id="my-tooltip" />
+                  <Tooltip id="my-tooltip" /> */}
                 </div>
               </div>
             </div>

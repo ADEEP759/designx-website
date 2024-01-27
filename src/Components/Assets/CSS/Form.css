@@ -2,21 +2,21 @@
     margin-top: 20px !important;
 }
 
-.MuiFormLabel-root{
+/* .MuiFormLabel-root{
     color: white !important;
-}
+} */
 
 
 .MuiInput-underline{
     border-bottom: 1px solid white !important;
 }
 
-.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
-    font-size: 12px !important;
+.MuiFormLabel-root{
+    font-size: 14px !important;
     color: #c8c8c8 !important;
 }
 
-.css-l4u8b9-MuiInputBase-root-MuiInput-root{
+.MuiInput-root{
     font-family: 'Poppins', sans-serif !important;
 }
 
@@ -24,7 +24,7 @@
     color: #B7B7B7 !important;
 }
 
-.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root{
+.MuiCheckbox-root{
     color: white !important;
 }
 
@@ -32,18 +32,18 @@
     color: white !important;
 }
 
-.css-1d1r5q-MuiFormHelperText-root.Mui-error{
-    font-family: "Poppins", sans-serif;
+.Mui-error{
+    font-family: "Poppins", sans-serif !important;
 }
 
 @media (max-width:639px){
 .MuiFormControl-root{
     margin-top: 10px !important;
 }
-.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root{
+.MuiFormLabel-root{
     font-size: 10px !important;
 }
-.css-1x51dt5-MuiInputBase-input-MuiInput-input{
+.MuiInputBase-input{
     font-size: 12px !important;
     font-weight: 200 !important;
 }

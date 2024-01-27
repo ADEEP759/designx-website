@@ -39,7 +39,7 @@ const Testimonies = () => {
       (prevIndex) => (prevIndex - 1 + texts.length) % texts.length
     );
   };
-  const handleMouseEnter = (index) => {
+  const handleSlideClick = (index) => {
     setCurrentIndex(index);
   };
 
@@ -54,13 +54,13 @@ const Testimonies = () => {
             <img
               src={prevArrow}
               alt=""
-              className="w-[78px] cursor-pointer"
+              className="w-[78px] cursor-pointer zoomable"
               onClick={handlePrevious}
             />
             <img
               src={nextArrow}
               alt=""
-              className="w-[78px] ml-[32px] cursor-pointer"
+              className="w-[78px] ml-[32px] cursor-pointer zoomable"
               onClick={handleNext}
             />
           </div>
@@ -91,7 +91,7 @@ const Testimonies = () => {
                     transition:
                       "transform 0.5s ease-in-out, opacity 0.5s ease-in-out, filter 0.5s ease-in-out",
                   }}
-                  onMouseEnter={() => handleMouseEnter(index)}
+                  onClick={() => handleSlideClick(index)}
                   // onMouseLeave={handleMouseLeave}
                 >
                   <div className="p-[10px] rounded">
