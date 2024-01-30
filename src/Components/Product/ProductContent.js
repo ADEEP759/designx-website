@@ -3,7 +3,7 @@ import digitalProcess from "../Assets/Images/digitalProcess.svg";
 
 const ProductContent = () => {
   return (
-    <div className="contentProduct py-[20px] sm:py-[50px] md:py-[100px]">
+    <div className="contentProduct py-[20px] sm:pb-[50px] md:pb-[100px]">
       <p className="text-[22px] md:text-[24px] lg:text-[28px] text-white font-poppins font-medium block lg:hidden px-[15px] sm:px-[30px]">
         Digital Process
       </p>

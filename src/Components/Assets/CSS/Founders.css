@@ -1,20 +1,15 @@
-.card {
-    /* Your card styling */
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-  }
+.cardFounder {
+  border-radius: 17px;
+  transition: border 0.3s ease;
+}
+.cardFounder:hover {
+  border-top: 10px solid #0046ff;
+  border-right: 10px solid #0046ff;
+}
   
-  .card:hover, .card.hovered {
-    border: 2px solid blue;
-  }
-  
+.founder {
+  background: url("../Images/backClient.svg"),
+    lightgray 0px 0px / 100% 137.325% no-repeat;
+  background-size: cover;
+}
 
-  
-  .selected-box {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  

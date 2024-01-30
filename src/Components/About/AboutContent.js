@@ -1,7 +1,7 @@
 import React from "react";
 import checkImage from "../Assets/Images/aboutUsImageone.svg";
 import spring from "../Assets/Images/backgroundSprings.svg";
-import shop from "../Assets/Images/shopfloorMobile.svg";
+import shop from "../Assets/Images/mockup.svg";
 
 const AboutContent = () => {
   return (

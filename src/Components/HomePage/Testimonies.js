@@ -45,8 +45,8 @@ const Testimonies = () => {
 
   return (
     <div className="testimonies w-full h-auto py-[20px] px-[10px]">
-      <div className="flex flex-col lg:grid lg:grid-cols-2 pt-[30px] sm:pt-[40px] pl-[10px] sm:pl-[78px]">
-        <div className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[300px]">
+      <div className="flex flex-col lg:grid lg:grid-cols-2 pt-[30px] sm:pt-[0px] pl-[10px] sm:pl-[78px]">
+        <div className="w-full lg:w-[60%] mt-[5px] sm:mt-[80px] lg:mt-[200px]">
           <p className="text-gradientTest tracking-wide font-poppins text-[22px] sm:text-[32px] lg:text-[42px] font-semibold">
             What Our Clients Are Saying...
           </p>
@@ -54,18 +54,18 @@ const Testimonies = () => {
             <img
               src={prevArrow}
               alt=""
-              className="w-[78px] cursor-pointer zoomable"
+              className="w-[60px] cursor-pointer zoomable"
               onClick={handlePrevious}
             />
             <img
               src={nextArrow}
               alt=""
-              className="w-[78px] ml-[32px] cursor-pointer zoomable"
+              className="w-[60px] ml-[32px] cursor-pointer zoomable"
               onClick={handleNext}
             />
           </div>
         </div>
-        <div className="mt-[0px] lg:mt-[60px] ml-[0px] lg:ml-[-130px]">
+        <div className="mt-[0px] lg:mt-[0px] ml-[0px] lg:ml-[-130px]">
           <img
             src={inverted}
             alt=""

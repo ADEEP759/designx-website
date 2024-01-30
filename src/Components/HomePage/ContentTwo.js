@@ -25,7 +25,7 @@ const ContentTwo = () => {
             System), a no-code, low-code platform, which empowers you to build
             solutions tailored to your specific shop floor needs.
           </p>
-          <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px] lg:w-[80%]">
+          <p className="text-[#D4D4D4] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] tracking-wide font-poppins leading-[20px] lg:leading-[30px] xl:leading-[36px]">
             DFOS provides you with real-time insights and a transparent view of
             the factory leading to data-backed decisions and continuous
             improvement. It's like throwing a bright light on every corner of

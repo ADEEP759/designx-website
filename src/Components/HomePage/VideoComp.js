@@ -51,7 +51,7 @@ const VideoComp = () => {
             </button>
             </div>
           </div>
-          <div className="w-[664px] border-[5px] lg:border-[10px] border-solid border-[#0046FF] rounded-[15px] video-container relative overflow-hidden">
+          <div className="w-[664px] border-[5px] lg:border-[10px] border-solid border-[#0046FF] rounded-[20px] video-container relative overflow-hidden">
             <div>
               {!isPlaying && (
                 <div className="relative">

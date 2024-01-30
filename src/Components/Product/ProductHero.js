@@ -6,7 +6,7 @@ const ProductHero = () => {
     <div className="productHero block lg:flex bg-[#000210]">
       <div className="font-poppins pt-[70px] lg:pt-[30px] mt-[0px] lg:mt-[00px] xl:mt-[50px] px-[15px] sm:px-[30px] xl:px-[80px] w-full lg:w-[50%]">
         <p className="text-white text-[22px] pt-[70px] md:text-[32px] lg:text-[43px] mt-[10px] lg:mt-[0px] tracking-wide w-[90%] font-medium">
-          Revolutionize Your Shop floor with DFOS!
+          Revolutionize Your Shop Floor With DFOS!
         </p>
         <p className="text-[#adadad] text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[20px] lg:leading-[30px] xl:leading-[36px] tracking-wide pr-[0px] xl:pr-[55px] w-[90%]">
           DFOS (Digital Factory Operating System) is a SaaS-based DIY platform

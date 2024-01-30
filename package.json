@@ -1,8 +1,8 @@
 {
   "name": "designx-website",
-  "homepage": "https://react.dfos.co/DesignX_web",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://react.dfos.co",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -19,7 +19,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
-    "axios": "^1.6.2",
+    "axios": "^1.6.7",
     "bootstrap": "^5.3.2",
     "formik": "^2.4.5",
     "keen-slider": "^6.8.6",
