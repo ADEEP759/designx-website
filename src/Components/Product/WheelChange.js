@@ -749,15 +749,15 @@ const WheelChange = () => {
 
         <div className="flex flex-col justify-center items-center w-full px-[40px] sm:pr-[30px] lg:pr-[80px] pb-[20px] sm:pb-[0px] py-[0px] sm:py-[20px] tracking-wide">
           <div className="w-full h-auto border-[4px] sm:border-[7px] border-solid border-[#0B77F8] rounded-[21px] pt-[10px] sm:pt-[20px] pb-[16px] sm:pb-[26px] px-[10px] sm:px-[30px] text-left">
-            <p className="text-[22px] sm:text-[33px] lg:text-[43px] text-white font-robotoSlab font-semibold tracking-wide">
+            <p className="text-[22px] sm:text-[33px] lg:text-[38px] text-white font-robotoSlab font-semibold tracking-wide leading-[20px] lg:leading-[30px]">
               {hoveredHeading ? hoveredHeading.name : "Sustainability"}
             </p>
-            <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins tracking-wide">
+            <p className="text-[12px] sm:text-[16px] lg:text-[18px] text-white font-poppins tracking-wide leading-[20px] lg:leading-[30px]">
               {hoveredHeading
                 ? hoveredHeading.description
                 : "DFOS can support sustainability goals by monitoring & reducing energy consumption and waste. It can also assist in maintaining compliance with environmental and safety regulations, reducing the risk of fines and legal issues."}
             </p>
-            <p className="text-[12px] sm:text-[16px] lg:text-[20px] text-white font-poppins tracking-wide">
+            <p className="text-[12px] sm:text-[16px] lg:text-[18x] text-white font-poppins tracking-wide leading-[20px] lg:leading-[30px]">
               {hoveredHeading
                 ? hoveredHeading.bonus
                 : "Embrace an environmentally & ethically sound approach to gain an edge. Preserving the planet with DFOS."}

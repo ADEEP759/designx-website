@@ -2,10 +2,10 @@ import React from "react";
 import "../Assets/CSS/Footer.css";
 import linkedin from "../Assets/Images/linkedinIcon.svg";
 import logo from "../Assets/Images/designXlogo.svg";
-import isms from '../Assets/Images/isms.png'
-import ssl from '../Assets/Images/SSL-Secure-Connection.png'
-import email from '../Assets/Images/emailIcon.svg'
-import phone from '../Assets/Images/phoneIcon.svg'
+import isms from "../Assets/Images/isms.png";
+import ssl from "../Assets/Images/SSL-Secure-Connection.png";
+import email from "../Assets/Images/emailIcon.svg";
+import phone from "../Assets/Images/phoneIcon.svg";
 import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -15,33 +15,47 @@ const Footer = () => {
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Product</p>
             <Link to="/Product" className=" no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-medium hover:text-[#0046FF] text-[12px] sm:text-[18px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 DFOS
               </p>
             </Link>
-            <ul className="">
-            <li>
+
+            <p
+              className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+              style={{ transition: "color 0.3s" }}
+            >
+              Digital Process
+            </p>
+
             <Link to="/IOTGateway" className=" no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 IOT
               </p>
             </Link>
-            </li>
-            <li>
+
             <Link to="/DigitalTwin" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 Digital Twin
               </p>
             </Link>
-            </li>
-            <li>
+
             <Link to="/ESG" className=" no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 ESG
               </p>
             </Link>
-            </li>
-            </ul>
           </div>
         </div>
         <div>
@@ -49,25 +63,35 @@ const Footer = () => {
             <p className="text-[16px] sm:text-[20px] font-medium">Company</p>
             <Link to="/Aboutus" className="no-underline text-white">
               {" "}
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 About Us
               </p>{" "}
             </Link>
             <Link to="/Blogs" className=" no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 Blogs
               </p>
             </Link>
             <Link to="/PrivacyPolicy" className="no-underline text-white">
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 Privacy Policy
               </p>
             </Link>
-            {/* <p className="font-light text-[12px] sm:text-[16px]">Case Study</p> */}
-            {/* <p className="font-light text-[12px] sm:text-[16px]">Newsletter</p> */}
             <Link to="/Contact" className="no-underline text-white">
               {" "}
-              <p className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]" style={{transition:"color 0.3s"}}>
+              <p
+                className="font-light hover:text-[#0046FF] text-[12px] sm:text-[16px]"
+                style={{ transition: "color 0.3s" }}
+              >
                 Contact Us
               </p>{" "}
             </Link>
@@ -77,25 +101,40 @@ const Footer = () => {
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Contact </p>
             <p className="font-light text-[12px] sm:text-[16px] flex items-center">
-             <span> <img src={email} alt="" /></span> &nbsp; &nbsp; 
+              <span>
+                {" "}
+                <img src={email} alt="" />
+              </span>{" "}
+              &nbsp; &nbsp;
               <Link to="mailto:info@designx.in" className="email_link">
                 {" "}
-              info@designx.in
+                info@designx.in
               </Link>
             </p>
             <p className="font-light text-[12px] sm:text-[16px] flex items-center">
-             <img src={phone} alt="" />&nbsp; &nbsp; 
-             <Link to="tel:9045012061" className="email_link">9045012061</Link>,{" "}
-             &nbsp;
-             <Link to="tel:8126084680" className="email_link">8126084680</Link>
+              <img src={phone} alt="" />
+              &nbsp; &nbsp;
+              <Link to="tel:9045012061" className="email_link">
+                9045012061
+              </Link>
+              , &nbsp;
+              <Link to="tel:8126084680" className="email_link">
+                8126084680
+              </Link>
             </p>
           </div>
           <br />
           <div>
-            <p className="text-[16px] sm:text-[20px] font-medium">Certifications</p>
+            <p className="text-[16px] sm:text-[20px] font-medium">
+              Certifications
+            </p>
             <p className="block sm:flex">
               <img src={isms} alt="" className="w-[50px] h-[50px] mr-[10px]" />
-              <img src={ssl} alt="" className="w-[75px] h-[50px] mt-[5px] sm:mt-[0px] ml-[0px] sm:ml-[10px]" />
+              <img
+                src={ssl}
+                alt=""
+                className="w-[75px] h-[50px] mt-[5px] sm:mt-[0px] ml-[0px] sm:ml-[10px]"
+              />
             </p>
           </div>
         </div>
@@ -103,21 +142,23 @@ const Footer = () => {
           <div>
             <p className="text-[16px] sm:text-[20px] font-medium">Address </p>
             <p className="font-light text-[12px] sm:text-[16px]">
-              3C-1, Block C, <br /> Research & Innovation Park, IIT Delhi, New Delhi
-              110016
+              3C-1, Block C, <br /> Research & Innovation Park, IIT Delhi, New
+              Delhi 110016
             </p>
             <br />
 
             <div>
-            <p className="text-[16px] sm:text-[20px] font-medium">Connect with us</p>
-            <p className="flex justify-center w-[50%]">
-              <Link
-                to="https://www.linkedin.com/company/nrv-designx/"
-                target="_blank"
-              >
-                <img src={linkedin} alt="" className="w-[45px] h-[45px]" />{" "}
-              </Link>
-            </p>
+              <p className="text-[16px] sm:text-[20px] font-medium">
+                Connect with us
+              </p>
+              <p>
+                <Link
+                  to="https://www.linkedin.com/company/nrv-designx/"
+                  target="_blank"
+                >
+                  <img src={linkedin} alt="" className="w-[45px] h-[45px]" />{" "}
+                </Link>
+              </p>
             </div>
           </div>
         </div>

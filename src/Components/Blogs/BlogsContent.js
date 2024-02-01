@@ -5,8 +5,8 @@ import iBPMS from "../Assets/Images/IOTBlogImage.png";
 import iBPMSMin from '../Assets/Images/iBPMSDetailsMin.png'
 import ArtificialIntelligence from "../Assets/Images/artificialBlog.png";
 import ArtificialIntelligenceMin from "../Assets/Images/ArtificialDetailedMin.png";
-import Hectos from '../Assets/Images/hectosBlog.png'
-import HectosMin from '../Assets/Images/hectosBlogMin.png'
+import Hectos from '../Assets/Images/IOTBlog.svg'
+import HectosMin from '../Assets/Images/IOTBlogMin.svg'
 import ESGBlog from '../Assets/Images/ESGBlog.png'
 import ESGBlogMin from '../Assets/Images/ESGBlogMin.png'
 import { Link } from "react-router-dom";

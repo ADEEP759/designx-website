@@ -29,7 +29,7 @@ const AboutusHero = () => {
         </div>
       </div>
       <p className="mt-[30px] sm:mt-[50px] lg:mt-[100px] mx-[15px] sm:mx-[30px] text-[22px] sm:text-[28px] lg:text-[32px] text-white font-poppins font-medium tracking-wide">
-        <span className="underline underline-offset-8 decoration-[2px]">Trusted </span>By
+       
       </p>
       <div className="mx-[0px] lg:mx-[85px]">
         <Marquee>

@@ -4,7 +4,7 @@ import "../Assets/CSS/Founders.css";
 import invertedComma1 from "../Assets/Images/invertedComma1.svg";
 import invertedComma2 from "../Assets/Images/invertedComma2.svg";
 import RajatSir from "../Assets/Images/rajatSir.svg";
-import NishantSir from "../Assets/Images/nishantSir.png";
+import NishantSir from "../Assets/Images/NishantSir.svg";
 import linkedin from "../Assets/Images/linkedinFull.svg";
 
 const foundersData = [
@@ -62,6 +62,7 @@ const Founders = () => {
             />
           </div>
         </div>
+        {/* desktop version */}
         <div className="block sm:flex mt-[50px] lg:mt-[0px]">
           {foundersData.map((founder, index) => (
             <div
@@ -79,13 +80,45 @@ const Founders = () => {
               <p className="CEO text-[24px] xl:text-[28px] font-poppins font-medium text-center mt-[66px]">
                 {founder.name.split(",")[0]}
               </p>
-              <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center">
+              <p className="text-[#a0a0a0] text-[20px] lg:text-[24px] font-poppins text-center mb-[0.5rem]">
                 {founder.role}
               </p>
-              <div className="flex justify-center mt-[10px]">
+              <div className="flex justify-center mt-[0px]">
                 <Link to={founder.linkedinURL} target="_blank">
                   <img src={linkedin} alt="" />
                 </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* mobile version */}
+        <div className="block sm:flex mt-[50px] lg:mt-[0px]">
+          {foundersData.map((founder, index) => (
+            <div
+              key={index}
+              className={`bg-[#282932] w-[100%] h-[206px] rounded-[17px] pt-[0px] cardFounder ${
+                index === 1 ? "mt-[20px] px-[10px]" : "px-[20px]"
+              } flex justify-around items-center sm:hidden tracking-wide leading-[20px] lg:leading-[36px]`}
+              onMouseEnter={() => handleFounderHover(founder)}
+            >
+              <img
+                src={founder.image}
+                alt=""
+                className="flex items-center w-[100px] h-[100px]"
+              />
+              <div>
+              <p className="CEO text-[18px] font-poppins font-medium text-center">
+                {founder.name.split(",")[0]}
+              </p>
+              <p className="text-[#a0a0a0] text-[16px] lg:text-[24px] font-poppins text-center">
+                {founder.role}
+              </p>
+              <div className="flex justify-center mt-[0px]">
+                <Link to={founder.linkedinURL} target="_blank">
+                  <img src={linkedin} alt="" />
+                </Link>
+              </div>
               </div>
             </div>
           ))}

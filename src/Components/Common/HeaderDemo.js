@@ -4,22 +4,17 @@ import { Link } from "react-router-dom";
 import logo from "../Assets/Images/designXlogo.svg";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog } from "@headlessui/react";
-// import downArrow from'../Assets/Images/downArrow.svg';
 // import { Tooltip } from 'react-tooltip';
-// import ScrollToTop from "./ScrollToTop";
 
 const navigation = [
   { name: "Home", to: "/" },
   { name: "Product", to: "/Product" },
   { name: "About Us", to: "/Aboutus" },
-  // { name: "Resources", to: "/Resources" },
-  { name: "Blogs", to:"/Blogs"},
-  // { name: "Contact Us", to:"/Contact"},
+  { name: "Blogs", to: "/Blogs" },
 ];
 const HeaderDemo = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isSticky, setSticky] = useState(false);
-  // const [showResourcesDropdown, setShowResourcesDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -71,14 +66,16 @@ const HeaderDemo = () => {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <div key={item.name} className="relative font-poppins font-normal">
-                  <Link
-                    to={item.to}
-                    className="no-underline font-poppins text-[14px] sm:text-[18px] font-normal leading-6 text-white tracking-wider"
-                  >
-                    {item.name}
-                  </Link>
-                
+              <div
+                key={item.name}
+                className="relative font-poppins font-normal"
+              >
+                <Link
+                  to={item.to}
+                  className="no-underline font-poppins text-[14px] sm:text-[18px] font-normal leading-6 text-white tracking-wider"
+                >
+                  {item.name}
+                </Link>
               </div>
             ))}
           </div>
@@ -89,15 +86,6 @@ const HeaderDemo = () => {
             >
               Contact Us
             </Link>
-            {/* <button
-            data-tooltip-id="my-tooltip"
-            data-tooltip-content="Coming Soon"
-              to="#"
-              className="text-[16px] leading-6 text-[#00153F] no-underlines font-inter font-semibold bg-white rounded-[64px] py-[10px] px-[20px] tracking-wide"
-            >
-              Demo
-            </button>
-            <Tooltip id="my-tooltip" /> */}
           </div>
         </nav>
         <Dialog
@@ -125,13 +113,16 @@ const HeaderDemo = () => {
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
-                    <div key={item.name} className="relative font-poppins font-normal">
-                        <Link
-                          to={item.to}
-                          className="no-underline font-poppins text-[14px] sm:text-[18px] leading-6 text-white font-normal tracking-wider"
-                        >
-                          {item.name}
-                        </Link>
+                    <div
+                      key={item.name}
+                      className="relative font-poppins font-normal"
+                    >
+                      <Link
+                        to={item.to}
+                        className="no-underline font-poppins text-[14px] sm:text-[18px] leading-6 text-white font-normal tracking-wider"
+                      >
+                        {item.name}
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -142,22 +133,12 @@ const HeaderDemo = () => {
                   >
                     Contact Us
                   </Link>
-                  {/* <button
-                  data-tooltip-id="my-tooltip"
-                  data-tooltip-content="Coming Soon"
-                    to="#"
-                    className="-mx-3 block rounded-[64px] font-inter font-semibold ml-[3px] px-[20px] py-2.5 text-[14px] sm:text-base no-underline leading-7 text-[#00153F] bg-white hover:bg-gray-50"
-                  >
-                    Demo
-                  </button>
-                  <Tooltip id="my-tooltip" /> */}
                 </div>
               </div>
             </div>
           </Dialog.Panel>
         </Dialog>
       </header>
-      {/* <ScrollToTop/> */}
     </div>
   );
 };

@@ -5,11 +5,10 @@ const IBPMS = () => {
   return (
     <div className="blogback">
       <div className="blogHeaderBack pt-[75px]">
-        {/* <img src={headerblogDetails} alt="" className='absolute top-0 w-full' /> */}
         <div className="block lg:grid lg:grid-cols-2 gap-4 relative z-[1]">
           <div className="pl-[50px] lg:pl-[100px] pr-[50px]">
             <p className="text-white text-[14px] lg:text-[18px] font-inter mt-[31px]">
-            <Link to="/" className="homeButton">
+              <Link to="/" className="homeButton">
                 Home
               </Link>{" "}
               /{" "}
@@ -32,9 +31,6 @@ const IBPMS = () => {
         </div>
       </div>
       <div className="mx-[30px] md:mx-[50px] xl:mx-[80px] mt-[52px] pb-[50px]">
-        {/* <p className='text-[#FCFCFC] text-[28px] font-poppins'>
-      Unveil a plethora of opportunities with IIOT solutions.
-      </p> */}
         <p className="text-[#C8C8C8] text-[14px] lg:text-[18px] font-poppins">
           In the modern world today, where we walk besides technology, iBMP
           (Intelligent Business Process Management) can be an appealing solution

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import heroImage from "../Assets/Images/heroimage-min.png";
 import "../Assets/CSS/HeroSection.css";
 import CountUp from "react-countup";
-// import VisibilitySensor from "react-visibility-sensor-v2";
 import { useInView } from "react-intersection-observer";
 
 const Counter = ({ start, end, delay, label }) => {
@@ -45,11 +44,8 @@ const HeroSection = () => {
         </div>
         <div className="text-[#DADADA] text-[14px] md:text-[14px] lg:text-[18px] mt-[10px] text-center tracking-wide px-[20px]">
           Capture remaining 99% data points by digitizing end-to-end
-          manufacturing processes with DFOS
+          manufacturing processes with DFOS<sup><small>&trade;</small></sup>
         </div>
-        {/* <button className="btn-start text-[18px] md:text-[24px] text-white font-medium w-[170px] h-[56px] rounded-[11px] ml-[35%] md:ml-[44.2%] mt-[50px]">
-          Start Today
-        </button> */}
       </div>
       <div className="backNo flex justify-around w-full px-[10px] sm:px-[50px] h-[0px] sm:h-[350px] md:h-auto pt-[30px] sm:pt-[0px] pb-[40px] sm:pb-[0px]  md:p-[50px] mt-[0%] sm:mt-[50%]">
         <Counter start={0} end={350} delay={1} label="Manufacturing Plants" />

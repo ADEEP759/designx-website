@@ -1,3 +1,4 @@
 .hoverable {
-  fill-opacity: 0.7;
+  fill-opacity: 1;
+  transition: fill-opacity 0.3s ease-in-out;
 }

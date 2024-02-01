@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "../Assets/CSS/Form.css";
 import Checkbox from "@mui/material/Checkbox";
@@ -6,19 +6,23 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { useFormik } from "formik";
 import { formValidation } from "../../schemas/index";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SubmitForm = () => {
+  const [loading, setLoading] = useState(false);
   const formik = useFormik({
     initialValues: {
       name: "",
       email: "",
       phone: "",
-      company: "",
-      subscribe: true,
+      company_name: "",
+      subscribe_news: true,
       remark: "",
     },
     validationSchema: formValidation,
     onSubmit: (values, { resetForm }) => {
+      setLoading(true);
       axios
         .post("https://react.dfos.co/app/api/v3/designx-contact-us", values, {
           headers: {
@@ -26,11 +30,14 @@ const SubmitForm = () => {
           },
         })
         .then((response) => {
-          console.log("API Response:", response.data);
+          toast.success(response.data.message);
           resetForm();
         })
         .catch((error) => {
-          console.error("API Error:", error.message || error);
+          toast.error("Error occurred while submitting the form.");
+        })
+        .finally(() => {
+          setLoading(false);
         });
     },
   });
@@ -48,20 +55,13 @@ const SubmitForm = () => {
             an end. Switch to digital transformation today with DesignX!
           </p>
           <div className="flex justify-center lg:justify-between flex-row mt-[40px]">
-            <div className="bookDemo mr-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
+            <div className="bookDemo mr-[10px] w-[200px] lg:w-[380px] h-[100px] lg:h-[140px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
               <p className="contactTextGradient text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
                 Book a Demo
               </p>
               <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
-                Request a demo of one of our solutions.
-              </p>
-            </div>
-            <div className="tryNow ml-[10px] w-[130px] lg:w-[168px] h-[172px] lg:h-[202px] focus:border-[5px] focus:border-solid focus:border-[#0046FF] pr-[20px]">
-              <p className="text-white  text-[16px] lg:text-[22px] font-poppins font-semibold mt-[20px] ml-[17px]">
-                Try Now !
-              </p>
-              <p className="text-[#D4D4D4] text-[10px] lg:text-[12px] font-poppins ml-[17px]">
-                Sign up for a demo and switch to digitalization.
+                Request a demo to unlock the potential of our best offerings.
+                Explore futuristic solutions with us!
               </p>
             </div>
           </div>
@@ -120,12 +120,12 @@ const SubmitForm = () => {
               />
               <TextField
                 fullWidth
-                id="company"
+                id="company_name"
                 label="COMPANY (OPTIONAL)"
-                name="company"
+                name="company_name"
                 variant="standard"
                 autoComplete="off"
-                value={formik.values.company}
+                value={formik.values.company_name}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
@@ -134,11 +134,11 @@ const SubmitForm = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    id="subscribe"
-                    name="subscribe"
-                    checked={formik.values.subscribe}
+                    id="subscribe_news"
+                    name="subscribe_news"
+                    checked={formik.values.subscribe_news}
                     onChange={(e) =>
-                      formik.setFieldValue("subscribe", e.target.checked)
+                      formik.setFieldValue("subscribe_news", e.target.checked)
                     }
                   />
                 }
@@ -151,7 +151,7 @@ const SubmitForm = () => {
                 <textarea
                   name="remark"
                   id="remark"
-                  value={formik.values.remark || ""}
+                  value={formik.values.remark}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                   placeholder="It would be great to hear more about your project (optional)"
@@ -162,14 +162,16 @@ const SubmitForm = () => {
                 <button
                   type="submit"
                   className="submitButtonForForm w-[100px] md:w-[121px] h-[36px] md:h-[42px] text-white text-[14px] md:text-[18px] font-poppins font-medium mt-[22px]"
+                  disabled={loading}
                 >
-                  Submit
+                  {loading ? "Loading..." : "Submit"}
                 </button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

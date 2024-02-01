@@ -3,7 +3,6 @@ import "../Assets/CSS/ContentOne.css";
 import dashboard from "../Assets/Images/dashboard.svg";
 import spring from "../Assets/Images/backgroundSprings.svg";
 const ContentOne = () => {
-
   return (
     <div>
       <div className="backContent h-auto pb-[50px]">
@@ -12,8 +11,6 @@ const ContentOne = () => {
         </p>
         <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-4 pt-[30px] px-[15px] sm:px-[30px] md:px-[50px] 2xl:px-[80px]">
           <div
-            // data-aos="fade-up"
-            // data-aos-duration="1000"
             className=" relative z-[10] mt-[0px] lg:mt-[40px]"
           >
             <p className="text-white text-[20px] sm:text-[28px] md:text-[32px] tracking-wide lg:text-[36px] font-poppins font-medium capitalize hidden lg:block">

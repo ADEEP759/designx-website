@@ -92,7 +92,6 @@ const Testimonies = () => {
                       "transform 0.5s ease-in-out, opacity 0.5s ease-in-out, filter 0.5s ease-in-out",
                   }}
                   onClick={() => handleSlideClick(index)}
-                  // onMouseLeave={handleMouseLeave}
                 >
                   <div className="p-[10px] rounded">
                     <p className="text-[#009BF8] tracking-wide font-poppins text-[16px] sm:text-[20px] font-semibold">

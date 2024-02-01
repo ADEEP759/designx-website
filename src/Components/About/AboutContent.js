@@ -53,14 +53,14 @@ const AboutContent = () => {
           </p>
         </div>
         <p className="text-[22px] md:text-[28px] lg:text-[32px] text-white font-poppins font-medium mx-[15px] sm:mx-[30px] block lg:hidden">
-          Switch to Smart Shopfloors with DFOS
+          Switch to Smart Shopfloors with DFOS<sup><small>&trade;</small></sup>
         </p>
         <div className="flex justify-center">
           <img src={shop} alt="" className="mt-[0px] lg:mt-[0px]" />
         </div>
         <div className="mx-[15px] sm:mx-[30px] lg:mx-[50px] mt-[0px] lg:mt-[70px] ">
           <p className="text-[16px] sm:text-[28px] lg:text-[32px] text-white font-poppins font-medium hidden lg:block">
-            Switch to Smart Shopfloors with DFOS
+            Switch to Smart Shopfloors with DFOS<sup><small>&trade;</small></sup>
           </p>
           <p className="text-[12px] sm:text-[14px] lg:text-[18px] text-[#adadad] font-poppins">
             DFOS is built to help you switch to the next generation of shop

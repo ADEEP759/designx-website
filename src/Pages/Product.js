@@ -1,42 +1,36 @@
-import React, { useEffect } from 'react'
-import HeaderDemo from '../Components/Common/HeaderDemo'
-import ProductHero from '../Components/Product/ProductHero'
-import ProductContent from '../Components/Product/ProductContent'
-import ProductIIOT from '../Components/Product/ProductIIOT'
-import '../Components/Assets/CSS/Product.css'
-import ProductDigitalTwin from '../Components/Product/ProductDigitalTwin'
-import ComputerVision from '../Components/Product/ComputerVision'
-import ESG from '../Components/Product/ESG'
-// import Wheel from '../Components/Product/Wheel'
-import Approach from '../Components/Product/Approach'
-import Footer from '../Components/Common/Footer'
-import WheelChange from '../Components/Product/WheelChange'
-import ScrollToTop from '../Components/Common/ScrollToTop'
-// import CardDemo from '../Components/Product/CardDemo'
-// import productBack from '../Components/Assets/Images/aboutUsBackground.png';
+import React, { useEffect } from "react";
+import HeaderDemo from "../Components/Common/HeaderDemo";
+import ProductHero from "../Components/Product/ProductHero";
+import ProductContent from "../Components/Product/ProductContent";
+import ProductIIOT from "../Components/Product/ProductIIOT";
+import "../Components/Assets/CSS/Product.css";
+import ProductDigitalTwin from "../Components/Product/ProductDigitalTwin";
+import ComputerVision from "../Components/Product/ComputerVision";
+import ESG from "../Components/Product/ESG";
+import Approach from "../Components/Product/Approach";
+import Footer from "../Components/Common/Footer";
+import WheelChange from "../Components/Product/WheelChange";
+import ScrollToTop from "../Components/Common/ScrollToTop";
 
 const Product = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className='product'>
-      {/* <img src={productBack} alt="" className='w-full' /> */}
-      <HeaderDemo/>
-      <ProductHero/>
-      <ProductContent/>
-      <ProductIIOT/>
-      <ProductDigitalTwin/>
-      <ComputerVision/>
-      <ESG/>
-      {/* <Wheel/> */}
-      <WheelChange/>
-      <Approach/>
-      {/* <CardDemo/> */}
-      <Footer/>
-      <ScrollToTop/>
+    <div className="product">
+      <HeaderDemo />
+      <ProductHero />
+      <ProductContent />
+      <ProductIIOT />
+      <ProductDigitalTwin />
+      <ComputerVision />
+      <ESG />
+      <WheelChange />
+      <Approach />
+      <Footer />
+      <ScrollToTop />
     </div>
-  )
-}
+  );
+};
 
-export default Product
+export default Product;
