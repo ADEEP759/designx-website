@@ -2,7 +2,7 @@
   "name": "designx-website",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://react.dfos.co",
+  "homepage": "https://react.dfos.co/DesignX_web",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",

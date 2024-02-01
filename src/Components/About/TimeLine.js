@@ -51,17 +51,11 @@ const TimeLine = () => {
   ];
 
   const parallaxLayerRef = useRef(null);
+  const parallaxRef = useRef(null);
   const [hasOverflow, setHasOverflow] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0)
 
-  useEffect(() => {
-    // Check if the ParallaxLayer has overflow
-    const element = parallaxLayerRef?.current;
-    if (element) {
-      console.log(element)
-      setHasOverflow(element?.isSticky);
-    }
-  }, []);
-  
+console.log(parallaxLayerRef)
   return (
     <div className="TimeLine border-b-[1px] border-b-solid border-b-black h-[600px]">
       <div className="background">
@@ -74,22 +68,23 @@ const TimeLine = () => {
           Timeline
         </p>
         <Parallax
+         ref={parallaxLayerRef}
           pages={TimeLineData.length}
           config={{ mass: 1, tension: 280, friction: 24 }} scrolling={0.8}
         >
-            {({ pages, progress }) => (
-            <>
           {TimeLineData.map((item, index) => {
+const opacity = Math.max(0, 1 - Math.abs(index * 100 - scrollPosition) / 1000);
+const zIndex = index === Math.floor(scrollPosition / 100) ? 10 : 1;
 
             return<ParallaxLayer
               key={index}
               sticky={{ start: index, end: index + 1 }}
               offset={index}
               style={{
-             
-                opacity: hasOverflow ? 1 : 0.5, // Set opacity based on focus
+                opacity,
+                zIndex
               }}
-              ref={parallaxLayerRef}
+             
             >
               <div className="grid grid-cols-2 gap-4"     >
                 <div className="card sticky">
@@ -101,7 +96,6 @@ const TimeLine = () => {
               </div>
             </ParallaxLayer>}
           )}
-          </>)}
         </Parallax>
       
       </div>

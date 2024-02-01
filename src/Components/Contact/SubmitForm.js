@@ -20,7 +20,7 @@ const SubmitForm = () => {
     validationSchema: formValidation,
     onSubmit: (values, { resetForm }) => {
       axios
-        .post("/app/api/v3/designx-contact-us", values, {
+        .post("https://react.dfos.co/app/api/v3/designx-contact-us", values, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
