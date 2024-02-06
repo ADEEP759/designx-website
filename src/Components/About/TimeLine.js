@@ -1,61 +1,74 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import { useState, useEffect,useRef} from 'react';
+import { useState, useEffect } from "react";
+import { useSpring, animated } from "@react-spring/web";
 import "../Assets/CSS/Timeline.css";
 import TimelinePhoto from "../Assets/Images/timelineBack.png";
 
 const TimeLine = () => {
-  const TimeLineData = [
-    {
-      id:0,
-      year: "Inception: 2015",
-      description:
-        " NRV DesignX Pvt. Ltd. was found to provide services related to  automation and digitization manufacturing processes.",
-    },
-    {
-      id:1,
-      year: "MVP: 2018",
-      description:
-        "Completed our minimum viable product & started with one factory of Hindustan Unilever.",
-    },
-    {
-      id:2,
-      year: "Expansion: 2019",
-      description:
-        "Expanded to all the factories of HUL in South Asia & added new brands like Hero MotoCorp & Bajaj India.",
-    },
-    {
-      id:3,
-      year: "IOT Foray: 2020",
-      description:
-        "Added IOT capability & built library of communication protocols supporting all the major PLC controller brands. Via DFOS, assisted the Manufacturing Companies in maintaining the trajectory & not derailing from its path in the Covid pandemic times.",
-    },
-    {
-      id:4,
-      year: "DFOS Launch: 2021",
-      description:
-        "Launched DFOS commercially across 110 factories. Added a couple of high-end clients & full-fledged team to support.",
-    },
-    {
-      id:5,
-      year: "The Big Move: 2022",
-      description:
-        "Moved to IIT Delhi office in order to boost our Research & Tech sophistication",
-    },
-    {
-      id:6,
-      year: "Growing Steadily: 2023",
-      description:
-        "Robust team of 70+ handling multifaceted clients & processes spread over more than 350 factories.",
-    },
-  ];
+    const TimeLineData = [
+        {
+            id: 0,
+            year: "Inception: 2015",
+            description:
+                " NRV DesignX Pvt. Ltd. was found to provide services related to  automation and digitization manufacturing processes.",
+        },
+        {
+            id: 1,
+            year: "MVP: 2018",
+            description:
+                "Completed our minimum viable product & started with one factory of Hindustan Unilever.",
+        },
+        {
+            id: 2,
+            year: "Expansion: 2019",
+            description:
+                "Expanded to all the factories of HUL in South Asia & added new brands like Hero MotoCorp & Bajaj India.",
+        },
+        {
+            id: 3,
+            year: "IOT Foray: 2020",
+            description:
+                "Added IOT capability & built library of communication protocols supporting all the major PLC controller brands. Via DFOS, assisted the Manufacturing Companies in maintaining the trajectory & not derailing from its path in the Covid pandemic times.",
+        },
+        {
+            id: 4,
+            year: "DFOS Launch: 2021",
+            description:
+                "Launched DFOS commercially across 110 factories. Added a couple of high-end clients & full-fledged team to support.",
+        },
+        {
+            id: 5,
+            year: "The Big Move: 2022",
+            description:
+                "Moved to IIT Delhi office in order to boost our Research & Tech sophistication",
+        },
+        {
+            id: 6,
+            year: "Growing Steadily: 2023",
+            description:
+                "Robust team of 70+ handling multifaceted clients & processes spread over more than 350 factories.",
+        },
+    ];
 
-  const parallaxLayerRef = useRef(null);
-  const parallaxRef = useRef(null);
-  const [hasOverflow, setHasOverflow] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0)
+    const [scrollPosition, setScrollPosition] = useState(0);
 
-console.log(parallaxLayerRef)
+  useEffect(() => {
+    const handleScroll = () => {
+      const container = document.getElementById("timeline-container");
+      
+      const offset = Math.floor(container.scrollTop / 300);
+      setScrollPosition(offset);
+    };
+
+    const container = document.getElementById("timeline-container");
+    container.addEventListener("scroll", handleScroll);
+
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  
   return (
     <div className="TimeLine border-b-[1px] border-b-solid border-b-black h-[600px]">
       <div className="background">
@@ -67,37 +80,37 @@ console.log(parallaxLayerRef)
         <p className="scrollText text-white font-poppins font-medium ml-[20px]">
           Timeline
         </p>
-        <Parallax
-         ref={parallaxLayerRef}
-          pages={TimeLineData.length}
-          config={{ mass: 1, tension: 280, friction: 24 }} scrolling={0.8}
+
+        <div
+          id="timeline-container"
+          className="timeline-container overflow-y-scroll h-[300px]"
         >
           {TimeLineData.map((item, index) => {
-const opacity = Math.max(0, 1 - Math.abs(index * 100 - scrollPosition) / 1000);
-const zIndex = index === Math.floor(scrollPosition / 100) ? 10 : 1;
+            const opacity = scrollPosition === index  ? 1 : 0.5;
 
-            return<ParallaxLayer
-              key={index}
-              sticky={{ start: index, end: index + 1 }}
-              offset={index}
-              style={{
-                opacity,
-                zIndex
-              }}
-             
-            >
-              <div className="grid grid-cols-2 gap-4"     >
-                <div className="card sticky">
-                  <p>{item.year}</p>
+            const styles = useSpring({
+              opacity,
+              zIndex: opacity === 1 ? 1 : 0,
+            });
+
+            return (
+              <animated.div
+                key={index}
+                className="timeline-item"
+                style={styles}
+              >
+                <div className="grid grid-cols-2 gap-4 h-[300px]">
+                  <div className="card sticky">
+                    <p>{item.year}</p>
+                  </div>
+                  <div className="text-white font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px] h-[300px] flex items-center">
+                    {item.description}
+                  </div>
                 </div>
-                <div className="text-white font-poppins font-medium text-[16px] lg:text-[20px] px-[15px] py-[5px]">
-                  {item.description}
-                </div>
-              </div>
-            </ParallaxLayer>}
-          )}
-        </Parallax>
-      
+              </animated.div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

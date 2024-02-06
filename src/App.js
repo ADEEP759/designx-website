@@ -16,7 +16,7 @@ import ESGMain from './Pages/ESGMain';
 
 function App() {
   return (
-    <BrowserRouter basename='/DesignX_web'>
+    <BrowserRouter basename='/'>
     <Routes>
       <Route exact path="/" element={<HomePage />} />
       <Route path='/Aboutus' element={<About/>}/>
